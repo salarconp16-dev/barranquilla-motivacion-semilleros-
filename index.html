@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motivación e incorporación de aprendices SENA Centro Minero a pertenecer a semilleros de investigación</title>
+<style>
+:root{--ink:#17233b;--muted:#65728a;--paper:#f5f7fb;--card:#fff;--line:#e2e8f0;--blue:#2864dc;--teal:#159b8a;--gold:#e8a52b;--red:#d95d5d;--green:#24865b;--shadow:0 8px 26px rgba(25,42,75,.08)}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.app{max-width:1440px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:18px}.eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:.09em;font-size:11px}.top h1{font-size:clamp(24px,3vw,36px);line-height:1.12;margin:4px 0}.sub{color:var(--muted);margin:0}.source{background:#eaf0ff;color:#244eae;border:1px solid #d6e1ff;border-radius:12px;padding:10px 13px;font-size:12px;max-width:330px}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.nav button,.btn{border:0;border-radius:10px;padding:10px 14px;background:#e8edf6;color:var(--ink);font-weight:700;cursor:pointer}.nav button.active,.btn.primary{background:var(--blue);color:white}.btn.secondary{background:#e8f4f2;color:#116e63}.btn.danger{background:#fff0f0;color:#a73737}.btn:disabled{opacity:.45;cursor:not-allowed}.panel{display:none}.panel.active{display:block}.grid{display:grid;gap:15px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:15px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.kpi-label{color:var(--muted);font-size:12px;font-weight:700}.kpi-value{font-size:32px;font-weight:850;letter-spacing:-.04em;margin:5px 0}.kpi-note{font-size:12px;color:var(--muted)}.two{grid-template-columns:1.05fr .95fr}.three{grid-template-columns:repeat(3,1fr)}h2{font-size:21px;margin:0 0 12px}h3{font-size:16px;margin:0 0 8px}.muted{color:var(--muted)}.chart-wrap{height:250px;position:relative}.chart-wrap svg{width:100%;height:100%;overflow:visible}.bar-row{display:grid;grid-template-columns:145px 1fr 35px;gap:10px;align-items:center;margin:13px 0;font-size:13px}.track{height:12px;background:#edf1f7;border-radius:20px;overflow:hidden}.fill{height:100%;background:var(--teal);border-radius:20px}.callout{border-left:4px solid var(--blue);padding:12px 14px;background:#f0f5ff;border-radius:0 10px 10px 0}.tag{display:inline-block;font-size:11px;font-weight:800;padding:3px 8px;border-radius:30px;background:#eef2f8;color:#526078;margin:2px}.tag.fact{background:#e7f5ed;color:#176c42}.tag.inf{background:#fff2dc;color:#8a5b0a}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f7f9fc;color:#4d5c73;position:sticky;top:0}.dofa td:first-child{min-width:115px;font-weight:800}.dofa tr:nth-child(1) td:first-child{color:var(--green)}.dofa tr:nth-child(2) td:first-child{color:var(--blue)}.dofa tr:nth-child(3) td:first-child{color:#9a6b14}.dofa tr:nth-child(4) td:first-child{color:var(--red)}.game-head{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}.game-tabs{display:flex;gap:8px;flex-wrap:wrap}.game-tabs button{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 12px;cursor:pointer;font-weight:700}.game-tabs button.active{background:#17233b;color:white}.game{display:none;margin-top:15px}.game.active{display:block}.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.term-list{display:grid;gap:8px}.term{border:1px solid var(--line);border-radius:11px;padding:12px;background:white;cursor:pointer;min-height:56px;text-align:left}.term.selected{outline:3px solid #b7ccff;border-color:var(--blue);background:#f2f6ff}.term.correct{border-color:#65b88a;background:#ecf9f1}.term.wrong{border-color:#e18b8b;background:#fff1f1}.term small{display:block;color:var(--muted);margin-top:3px}.feedback{margin-top:12px;padding:10px 12px;border-radius:10px;background:#f2f5fa;color:#40516b;min-height:42px}.quiz-box{max-width:800px}.question{font-size:19px;font-weight:800;margin:10px 0 15px}.answers{display:grid;gap:9px}.answer{border:1px solid var(--line);background:white;text-align:left;padding:12px;border-radius:10px;cursor:pointer}.answer:hover{border-color:var(--blue)}.answer.correct{background:#eaf8ef;border-color:#5bb47d}.answer.incorrect{background:#fff0f0;border-color:#db8585}.quiz-meta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:13px}.roulette{width:150px;height:150px;border-radius:50%;background:conic-gradient(#2864dc 0 36deg,#159b8a 36deg 72deg,#e8a52b 72deg 108deg,#7457c8 108deg 144deg,#d95d5d 144deg 180deg,#2864dc 180deg 216deg,#159b8a 216deg 252deg,#e8a52b 252deg 288deg,#7457c8 288deg 324deg,#d95d5d 324deg);display:grid;place-items:center;color:#fff;font-weight:900;font-size:26px;margin:10px auto;box-shadow:inset 0 0 0 8px white,0 5px 18px #0002}.race-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:15px}.board{display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(6,74px);gap:5px}.tile{border:1px solid var(--line);border-radius:9px;background:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;font-size:11px;padding:4px;position:relative}.tile .n{font-weight:900;color:var(--muted)}.tile.start{background:#e7f5ed;border-color:#91d1a9}.tile.finish{background:#fff1d8;border-color:#e9c36e}.tile.current{outline:3px solid var(--blue);background:#eaf0ff}.pawn{font-size:20px}.race-side{display:flex;flex-direction:column;gap:12px}.dice{font-size:48px;text-align:center}.scoreline{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)}.notice{font-size:12px;color:var(--muted)}.foot{margin:24px 0 8px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}.pill{font-size:12px;font-weight:800;color:#1d5b9d;background:#eaf3ff;padding:5px 9px;border-radius:20px}.narrative{font-size:15px;line-height:1.7}.source-list li{margin:7px 0}.progress{height:8px;background:#edf1f7;border-radius:20px;overflow:hidden}.progress>i{display:block;height:100%;background:var(--blue);width:0%}
+@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.two,.race-layout{grid-template-columns:1fr}.three{grid-template-columns:1fr 1fr}.race-side{display:grid;grid-template-columns:1fr 1fr}.board{grid-template-rows:repeat(6,64px)}}@media(max-width:560px){.app{padding:13px}.top{align-items:flex-start;flex-direction:column}.source{max-width:none}.kpis{gap:9px}.card{padding:14px}.kpi-value{font-size:26px}.three,.match-grid{grid-template-columns:1fr}.board{grid-template-rows:repeat(6,53px);gap:3px}.tile{font-size:9px;padding:2px}.race-side{grid-template-columns:1fr}.bar-row{grid-template-columns:105px 1fr 25px;font-size:11px}}
+
+/* Módulo lector Excel: estilos aislados para no alterar los módulos originales */
+#excelPanel .excel-shell{display:grid;grid-template-columns:1.2fr .8fr;gap:15px}
+#excelPanel .excel-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+#excelPanel .excel-card h2{font-size:18px;margin:0 0 5px}
+#excelPanel .excel-hint{font-size:13px;color:var(--muted);margin:0 0 13px}
+#excelPanel .excel-drop{display:block;border:2px dashed #b7c9e3;border-radius:13px;background:#f7faff;text-align:center;padding:20px 14px;cursor:pointer}
+#excelPanel .excel-drop.drag{border-color:var(--blue);background:#edf4ff}
+#excelPanel .excel-drop b{display:block}
+#excelPanel .excel-drop small{color:var(--muted)}
+#excelPanel .excel-file{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+#excelPanel .excel-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+#excelPanel .excel-actions button,#excelPanel .excel-actions label{border:0;border-radius:10px;padding:10px 14px;background:#e9eef6;color:var(--ink);font:700 13px system-ui;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+#excelPanel .excel-actions .primary{background:var(--blue);color:#fff}
+#excelPanel .excel-status{border-radius:10px;padding:11px 12px;background:#f2f5f9;color:#526176;font-size:13px;min-height:44px}
+#excelPanel .excel-status.good{background:#eaf7f0;color:#176b45}
+#excelPanel .excel-status.warn{background:#fff6e7;color:#865a0a}
+#excelPanel .excel-status.bad{background:#fff0f0;color:#a52e2e}
+#excelPanel .excel-meta{margin-top:12px;display:grid;gap:7px}
+#excelPanel .excel-meta div{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:6px;font-size:12px}
+#excelPanel .excel-meta div:last-child{border:0}
+#excelPanel .excel-meta span{color:var(--muted)}
+#excelPanel .excel-meta b{text-align:right;overflow-wrap:anywhere}
+#excelPanel .excel-validation{font-size:12px;margin-top:10px}
+#excelPanel .excel-validation h3{font-size:13px;margin:0 0 5px}
+#excelPanel .excel-validation ul{padding-left:18px;margin:0}
+#excelPanel .excel-validation li{margin:4px 0}
+#excelPanel .excel-ok{color:var(--green)}
+#excelPanel .excel-issue{color:#b83232}
+#excelPanel .excel-empty{margin-top:16px;background:white;border:1px dashed #c6d2e2;border-radius:16px;text-align:center;padding:40px 18px;color:var(--muted)}
+#excelPanel .excel-empty h2{color:var(--ink);margin:3px 0;font-size:19px}
+#excelPanel .excel-record{display:none}
+#excelPanel .excel-record-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:20px 0 13px}
+#excelPanel .excel-record-head h2{font-size:clamp(21px,3vw,27px);line-height:1.2;margin:2px 0 4px}
+#excelPanel .excel-record-head p{font-size:13px;color:var(--muted);margin:0}
+#excelPanel .excel-pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+#excelPanel .excel-pill{background:#eaf0ff;color:#244eae;border-radius:30px;padding:4px 9px;font-size:11px;font-weight:800}
+#excelPanel .excel-pill.state{background:#e8f5ef;color:#176b45}
+#excelPanel .excel-record-actions{display:flex;gap:8px;flex-wrap:wrap}
+#excelPanel .excel-record-actions button{border:0;border-radius:10px;padding:10px 14px;background:#e9eef6;color:var(--ink);font-weight:700;cursor:pointer}
+#excelPanel .excel-record-actions .dark{background:var(--navy);color:white}
+#excelPanel .excel-section{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;margin:12px 0;box-shadow:var(--shadow)}
+#excelPanel .excel-section h3{font-size:16px;margin:0 0 12px;display:flex;align-items:center;gap:9px}
+#excelPanel .excel-no{width:28px;height:28px;border-radius:9px;background:#eaf0ff;color:var(--blue);display:grid;place-items:center;font-size:11px;font-weight:900}
+#excelPanel .excel-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#excelPanel .excel-field{border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0;background:#fff}
+#excelPanel .excel-field.wide{grid-column:1/-1}
+#excelPanel .excel-label{font-size:10px;letter-spacing:.07em;text-transform:uppercase;font-weight:850;color:var(--muted);display:block;margin-bottom:5px}
+#excelPanel .excel-value{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;min-height:22px}
+#excelPanel .excel-value.missing{font-style:italic;color:#b83232}
+#excelPanel .excel-location{font-size:10px;color:#8a96a8;display:block;margin-top:6px}
+@media(max-width:760px){
+ #excelPanel .excel-shell{grid-template-columns:1fr}
+ #excelPanel .excel-record-head{flex-direction:column}
+ #excelPanel .excel-record-actions{width:100%}
+ #excelPanel .excel-record-actions button{flex:1}
+}
+@media(max-width:560px){
+ #excelPanel .excel-card,#excelPanel .excel-section{padding:14px}
+ #excelPanel .excel-fields{grid-template-columns:1fr}
+ #excelPanel .excel-field.wide{grid-column:auto}
+}
+@media print{
+ body.excel-printing>header,body.excel-printing main>.nav,body.excel-printing main>.panel,body.excel-printing main>#informe,body.excel-printing main>#dofa,body.excel-printing main>#juegos,body.excel-printing main>#fuente{display:none!important}
+ body.excel-printing main{max-width:none;margin:0;padding:0}
+ body.excel-printing #excelPanel{display:block!important}
+ body.excel-printing #excelPanel .excel-shell,body.excel-printing #excelPanel .excel-record-actions,body.excel-printing #excelPanel .excel-empty{display:none!important}
+ body.excel-printing #excelPanel .excel-record{display:block!important}
+ body.excel-printing #excelPanel .excel-record-head{margin:10px 0}
+ body.excel-printing #excelPanel .excel-section{box-shadow:none;border:1px solid #bbb;border-radius:5px;padding:10px;margin:7px 0;break-inside:avoid}
+ body.excel-printing #excelPanel .excel-field{border:1px solid #ddd;border-radius:4px;padding:7px;break-inside:avoid}
+ body.excel-printing #excelPanel .excel-label{color:#444;font-size:8pt}
+ body.excel-printing #excelPanel .excel-value{font-size:9.5pt}
+ body.excel-printing #excelPanel .excel-no,body.excel-printing #excelPanel .excel-pill{background:#eee!important;color:#111!important}
+}
+
+
+/* Ficha 06 · Informe ejecutivo generado desde PDF */
+#pdfPanel .pdf-layout{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+#pdfPanel .pdf-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);min-width:0}
+#pdfPanel .pdf-drop{display:block;border:2px dashed #9eb5d8;border-radius:13px;background:#f5f8ff;padding:22px;text-align:center;cursor:pointer}
+#pdfPanel .pdf-drop.drag{background:#eaf1ff;border-color:var(--blue)}
+#pdfPanel .pdf-drop b{display:block}
+#pdfPanel .pdf-drop small{color:var(--muted)}
+#pdfPanel .pdf-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+#pdfPanel .pdf-actions button{border:0;border-radius:10px;padding:10px 14px;background:#e9eef6;font-weight:750;cursor:pointer}
+#pdfPanel .pdf-actions .primary{background:var(--blue);color:#fff}
+#pdfPanel .pdf-status{padding:11px 13px;border-radius:10px;background:#f1f4f8;color:#526176;margin-top:12px;min-height:42px;font-size:13px}
+#pdfPanel .pdf-status.good{background:#eaf7f0;color:#176b45}
+#pdfPanel .pdf-status.bad{background:#fff0f0;color:#a52e2e}
+#pdfPanel .pdf-status.warn{background:#fff6e7;color:#865a0a}
+#pdfPanel .pdf-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0}
+#pdfPanel .pdf-kpi{background:#fff;border:1px solid var(--line);border-radius:13px;padding:13px}
+#pdfPanel .pdf-kpi span{display:block;color:var(--muted);font-size:11px;font-weight:800}
+#pdfPanel .pdf-kpi b{display:block;font-size:25px;letter-spacing:-.04em;margin-top:4px;overflow-wrap:anywhere}
+#pdfPanel .pdf-section{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px;margin:14px 0;box-shadow:var(--shadow)}
+#pdfPanel .pdf-section h2{font-size:19px}
+#pdfPanel .pdf-chart{display:grid;gap:10px}
+#pdfPanel .pdf-chart-row{display:grid;grid-template-columns:minmax(100px,180px) 1fr 38px;gap:9px;align-items:center;font-size:12px}
+#pdfPanel .pdf-chart-track{height:11px;background:#edf1f7;border-radius:20px;overflow:hidden}
+#pdfPanel .pdf-chart-fill{height:100%;background:var(--teal);border-radius:20px}
+#pdfPanel .pdf-fact{border-left:4px solid var(--green);padding:10px 12px;background:#f0f8f3;border-radius:0 9px 9px 0;margin:9px 0}
+#pdfPanel .pdf-inference{border-left:4px solid var(--gold);padding:10px 12px;background:#fff8e9;border-radius:0 9px 9px 0;margin:9px 0}
+#pdfPanel .pdf-game-tabs{display:flex;gap:7px;flex-wrap:wrap}
+#pdfPanel .pdf-game-tabs button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:8px 11px;font-weight:750;cursor:pointer}
+#pdfPanel .pdf-game-tabs button.active{background:#17233b;color:#fff}
+#pdfPanel .pdf-game{display:none;margin-top:14px}
+#pdfPanel .pdf-game.active{display:block}
+#pdfPanel .pdf-match-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#pdfPanel .pdf-choice{width:100%;text-align:left;border:1px solid var(--line);background:#fff;border-radius:10px;padding:11px;margin:4px 0;cursor:pointer}
+#pdfPanel .pdf-choice.selected{outline:3px solid #b7ccff;background:#f2f6ff}
+#pdfPanel .pdf-choice.correct{background:#eaf8ef;border-color:#5bb47d}
+#pdfPanel .pdf-choice.incorrect{background:#fff0f0;border-color:#db8585}
+#pdfPanel .pdf-board{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px}
+#pdfPanel .pdf-tile{min-height:56px;border:1px solid var(--line);border-radius:8px;background:#fff;display:grid;place-content:center;text-align:center;font-size:10px;padding:3px}
+#pdfPanel .pdf-tile.current{outline:3px solid var(--blue);background:#eaf0ff}
+#pdfPanel .pdf-tile.start{background:#e7f5ed}
+#pdfPanel .pdf-tile.finish{background:#fff1d8}
+#pdfPanel .pdf-feedback{background:#f2f5fa;border-radius:9px;padding:11px;margin-top:10px;min-height:42px;font-size:13px}
+#pdfPanel .pdf-small{font-size:12px;color:var(--muted)}
+#pdfPanel .pdf-game-answer{display:grid;gap:7px}
+#pdfPanel .pdf-hidden-file{position:absolute;width:1px;height:1px;opacity:0}
+@media(max-width:850px){#pdfPanel .pdf-layout{grid-template-columns:1fr}#pdfPanel .pdf-kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){#pdfPanel .pdf-card,#pdfPanel .pdf-section{padding:13px}#pdfPanel .pdf-match-grid{grid-template-columns:1fr}#pdfPanel .pdf-tile{min-height:47px;font-size:9px}}
+
+
+/* Ficha 07 · Integración de reuniones Microsoft Teams */
+#teamsPanel .teams-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:15px}
+#teamsPanel .teams-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+#teamsPanel .teams-hero{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+#teamsPanel .teams-logo{width:54px;height:54px;border-radius:14px;background:#eeeaff;color:#5142a5;display:grid;place-items:center;font-size:25px;font-weight:900}
+#teamsPanel label{display:block;font-size:12px;font-weight:800;color:#526176;margin:12px 0 5px}
+#teamsPanel input,#teamsPanel textarea{width:100%;border:1px solid #d7deea;border-radius:9px;padding:11px;font:inherit;color:var(--ink);background:#fff}
+#teamsPanel textarea{min-height:78px;resize:vertical}
+#teamsPanel .teams-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+#teamsPanel .teams-actions button{border:0;border-radius:10px;padding:10px 14px;background:#e9eef6;color:var(--ink);font-weight:800;cursor:pointer}
+#teamsPanel .teams-actions .primary{background:#5142a5;color:#fff}
+#teamsPanel .teams-status{padding:11px 12px;border-radius:10px;background:#f2f5fa;color:#46556c;font-size:13px;margin-top:12px;min-height:42px}
+#teamsPanel .teams-note{background:#f5f2ff;border-left:4px solid #6254b7;padding:12px;border-radius:0 10px 10px 0;font-size:13px}
+#teamsPanel .teams-list li{margin:8px 0}
+@media(max-width:800px){#teamsPanel .teams-layout{grid-template-columns:1fr}}
+
+
+#teamsPanel .provider-actions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+#teamsPanel .provider-actions button{border:0;border-radius:10px;padding:10px 13px;background:#e9eef6;color:var(--ink);font-weight:800;cursor:pointer}
+#teamsPanel .provider-actions button.active{background:#5142a5;color:#fff}
+#teamsPanel .room-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+#teamsPanel .room-tile{border:1px solid var(--line);border-radius:12px;padding:12px;background:#f8faff}
+#teamsPanel .room-tile b{display:block;margin-bottom:4px}
+@media(max-width:520px){#teamsPanel .room-grid{grid-template-columns:1fr}}
+#teamsPanel .teams-device-box{margin-top:16px;padding:14px;border:1px solid var(--line);border-radius:13px;background:#fafbfe}
+#teamsPanel #teamsLocalVideo{display:block;width:100%;max-height:310px;aspect-ratio:16/9;object-fit:cover;background:#17233b;border-radius:10px;margin:10px 0}
+#teamsPanel .teams-device-note,#teamsPanel .teams-device-state{font-size:12px;color:var(--muted)}
+#teamsPanel .teams-device-meter{height:9px;border-radius:20px;background:#e7ebf2;overflow:hidden;margin:9px 0}
+#teamsPanel .teams-device-meter span{display:block;height:100%;width:0;background:#159b8a;transition:width .08s}
+
+</style></head>
+<body><main class="app">
+<header class="top"><div><div class="eyebrow">CURSO IA BARRANQUILLA · INFORME DE LECTURA</div><h1>Motivación e incorporación de aprendices SENA Centro Minero a pertenecer a semilleros de investigación</h1><p class="sub">Informe ejecutivo, matriz DOFA y laboratorio de aprendizaje interactivo</p></div><div class="source"><b>Fuente única:</b> Hernández-Sampieri, capítulo 12, fragmento PDF, páginas impresas 356–364 (9 páginas del archivo). Los datos y preguntas se limitan al documento.</div></header>
+<nav class="nav" aria-label="Navegación principal"><button class="active" data-panel="informe">01 · Informe ejecutivo</button><button data-panel="dofa">02 · Matriz DOFA</button><button data-panel="juegos">03 · Gamificación</button><button data-panel="fuente">04 · Trazabilidad</button><button data-panel="excelPanel">05 · Ficha desde Excel</button><button data-panel="pdfPanel">06 · Informe ejecutivo</button><button data-panel="teamsPanel">07 · Videoconferencias Teams</button></nav>
+<section id="informe" class="panel active">
+<div class="grid kpis">
+<div class="card"><div class="kpi-label">PÁGINAS DEL FRAGMENTO</div><div class="kpi-value">9</div><div class="kpi-note">Páginas impresas 356–364</div></div>
+<div class="card"><div class="kpi-label">ELEMENTOS DEL PLANTEAMIENTO</div><div class="kpi-value">6</div><div class="kpi-note">Enumerados en el capítulo, pp. 358–359</div></div>
+<div class="card"><div class="kpi-label">RASGOS DEL PROCESO</div><div class="kpi-value">3</div><div class="kpi-note">Inductivo, interpretativo e iterativo/recurrente, p. 357</div></div>
+<div class="card"><div class="kpi-label">PRINCIPIOS CLAVE</div><div class="kpi-value">4</div><div class="kpi-note">Ambiente natural, conceptos iniciales, significados y datos no solo numéricos, p. 362</div></div>
+</div>
+<section class="card" id="formulacionProyecto" style="margin:0 0 15px">
+ <div class="eyebrow">FORMULACIÓN DEL PROYECTO · CENTRO MINERO SENA</div>
+ <h2 style="margin-top:5px">Interés de investigación</h2>
+ <p class="narrative">Comprender las percepciones, motivaciones, barreras y expectativas de los aprendices de los programas de formación tecnológica del Centro Minero del SENA, en Sogamoso, frente a su participación en los semilleros de investigación, con el propósito de construir colectivamente, mediante la Investigación Acción Participativa (IAP), estrategias y experiencias de investigación aplicada que despierten su interés por investigar, fortalezcan su formación profesional y permitan relacionar sus competencias técnicas con la identificación y solución de problemáticas reales del sector productivo.</p>
+ <div class="divider" style="height:1px;background:var(--line);margin:18px 0"></div>
+ <h2>Problema o necesidad de investigación</h2>
+ <p class="narrative">En el Centro Minero del Servicio Nacional de Aprendizaje (SENA), ubicado en Sogamoso, Boyacá, los semilleros de investigación constituyen espacios con potencial para promover el desarrollo de habilidades investigativas, la innovación y la generación de conocimientos aplicados a las necesidades del entorno productivo. Sin embargo, desde la experiencia y observación inicial del investigador, se identifica una baja vinculación de aprendices de los diferentes programas de formación tecnológica a estos espacios, evidenciada en el reducido número de participantes que actualmente los integran.</p>
+ <p class="narrative">Esta situación plantea la necesidad de comprender qué factores pueden estar relacionados con el poco interés de los aprendices por participar en los semilleros de investigación. Desde la perspectiva inicial del investigador, podrían existir percepciones que asocian la investigación con actividades difíciles, aburridas o excesivamente teóricas, así como una posible falta de reconocimiento de su utilidad para el futuro desempeño profesional. No obstante, estas apreciaciones constituyen puntos de partida que deberán contrastarse con las experiencias y perspectivas de los propios aprendices.</p>
+ <p class="narrative">La baja participación en estos espacios podría representar una oportunidad desaprovechada para fortalecer competencias relacionadas con el pensamiento crítico, la creatividad, la innovación y la resolución de problemas. Asimismo, podría limitar las posibilidades de que los aprendices identifiquen situaciones problemáticas de su entorno y utilicen los conocimientos y competencias técnicas adquiridas durante su formación para desarrollar alternativas de solución a necesidades reales de los sectores minero, industrial y productivo.</p>
+ <p class="narrative">En este sentido, surge la necesidad de explorar las motivaciones, barreras, expectativas y condiciones que influyen en la decisión de los aprendices de vincularse o no a los semilleros de investigación, así como reconocer qué experiencias prácticas y aplicadas podrían despertar su interés por investigar. Se considera especialmente importante escuchar tanto a quienes nunca han participado como a quienes actualmente forman parte de estos espacios, complementando sus perspectivas con los aportes de instructores y líderes de semilleros.</p>
+ <p class="narrative">Ante esta realidad, se propone desarrollar un proceso de Investigación Acción Participativa (IAP) que permita comprender la situación desde las voces de sus protagonistas y construir colectivamente estrategias y experiencias de investigación aplicada, orientadas a relacionar los conocimientos técnicos de los aprendices con la identificación y solución de problemáticas reales del sector productivo.</p>
+ <p class="narrative">Por consiguiente, la necesidad de investigación se centra en comprender y transformar las condiciones que pueden estar limitando el interés y la participación de los aprendices de formación tecnológica en los semilleros del Centro Minero del SENA, mediante la construcción participativa de alternativas que contribuyan al fortalecimiento de la cultura investigativa institucional.</p>
+ <div class="divider" style="height:1px;background:var(--line);margin:18px 0"></div>
+ <h2>Preguntas de investigación</h2>
+ <ol class="narrative" style="padding-left:22px">
+  <li style="margin:10px 0">¿Qué percepciones, motivaciones y barreras tienen los aprendices de los programas de formación tecnológica del Centro Minero del SENA frente a su participación en los semilleros de investigación?</li>
+  <li style="margin:10px 0">¿Qué experiencias prácticas de investigación aplicada podrían despertar el interés de los aprendices y relacionar sus competencias técnicas con las necesidades reales del sector productivo?</li>
+  <li style="margin:10px 0">¿Cómo construir colectivamente, mediante la Investigación Acción Participativa (IAP), estrategias que fortalezcan el interés y la participación de los aprendices en los semilleros de investigación?</li>
+ </ol>
+</section>
+<div class="grid two">
+<article class="card"><h2>Componentes del planteamiento cualitativo</h2><p class="muted">Seis componentes descritos por el texto (pp. 358–359).</p><div id="componentBars"></div></article>
+<article class="card"><h2>Cómo se caracteriza el proceso</h2><div class="chart-wrap"><svg id="processChart" viewBox="0 0 500 250" role="img" aria-label="Diagrama de tres características del proceso cualitativo"><defs><marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#8da2c4"/></marker></defs><circle cx="250" cy="122" r="54" fill="#eaf0ff" stroke="#2864dc" stroke-width="2"/><text x="250" y="117" text-anchor="middle" font-size="14" font-weight="700" fill="#17233b">Proceso</text><text x="250" y="136" text-anchor="middle" font-size="13" fill="#17233b">cualitativo</text><g stroke="#8da2c4" stroke-width="2" marker-end="url(#arr)"><path d="M205 82 L122 42"/><path d="M295 82 L378 42"/><path d="M250 177 L250 220"/></g><g font-size="14" font-weight="700" text-anchor="middle"><rect x="25" y="15" width="145" height="42" rx="12" fill="#e6f5f1"/><text x="97" y="41" fill="#116e63">Inductivo</text><rect x="330" y="15" width="145" height="42" rx="12" fill="#fff2dc"/><text x="402" y="41" fill="#8a5b0a">Interpretativo</text><rect x="160" y="208" width="180" height="36" rx="12" fill="#f0eaff"/><text x="250" y="231" fill="#6242a2">Iterativo y recurrente</text></g></svg></div><p class="notice">Diagrama elaborado a partir de la síntesis de la p. 357; no representa porcentajes.</p></article>
+</div>
+<div class="card" style="margin-top:15px"><h2>Resumen ejecutivo narrativo</h2><p class="narrative">El fragmento explica cómo una idea se convierte en un planteamiento de investigación cualitativa. Este planteamiento integra propósito, objetivos, preguntas, justificación, viabilidad, vacíos de conocimiento y contexto inicial. El enfoque busca comprender fenómenos desde las perspectivas de quienes los viven, en su ambiente natural. Por ello, las preguntas y el alcance suelen ser abiertos al comienzo y se afinan conforme el investigador entra al campo, observa, conversa, registra y analiza. El proceso no sigue una línea rígida: las acciones de recolección y análisis se retroalimentan y pueden modificar el planteamiento inicial. La revisión de literatura orienta y enriquece, pero no sustituye la experiencia en el contexto ni las voces de los participantes. (pp. 356–364).</p><div class="callout"><b>Lectura para el proyecto:</b> el capítulo ofrece criterios para formular una indagación sobre percepciones y experiencias de aprendices e instructores. No demuestra por sí mismo cuáles son sus motivaciones ni prescribe una estrategia específica para vincularlos a semilleros; eso debe explorarse en el contexto real.</div></div>
+<div class="grid three" style="margin-top:15px"><article class="card"><h3>Planteamiento</h3><p class="muted">Propósito, preguntas, justificación, viabilidad, vacíos y contexto.</p><span class="tag fact">Hecho del PDF · pp. 358–359</span></article><article class="card"><h3>Entrada al campo</h3><p class="muted">Explorar el contexto, considerar conveniencia y accesibilidad, registrar observaciones.</p><span class="tag fact">Hecho del PDF · p. 357</span></article><article class="card"><h3>Resultados iniciales</h3><p class="muted">Descripción del ambiente, ajuste del planteamiento, hipótesis emergentes y primeras categorías.</p><span class="tag fact">Hecho del PDF · p. 357</span></article></div>
+</section>
+<section id="dofa" class="panel"><div class="card"><div class="game-head"><div><h2>Matriz DOFA documental</h2><p class="muted">La matriz separa lo que el texto afirma de las lecturas estratégicas que podemos inferir para el proyecto.</p></div><span class="pill">Hecho ≠ inferencia</span></div><div class="table-wrap"><table class="dofa"><thead><tr><th>Dimensión</th><th>Contenido</th><th>Tipo de afirmación</th><th>Referencia</th></tr></thead><tbody>
+<tr><td>Fortalezas</td><td>El enfoque permite comprender experiencias, perspectivas, interpretaciones y significados en el contexto natural de los participantes.</td><td><span class="tag fact">Hecho del PDF</span></td><td>p. 358</td></tr>
+<tr><td>Fortalezas</td><td>El proceso es inductivo, interpretativo, iterativo y recurrente; el análisis y la recolección pueden avanzar de forma simultánea.</td><td><span class="tag fact">Hecho del PDF</span></td><td>pp. 356–357</td></tr>
+<tr><td>Oportunidades</td><td>La flexibilidad del planteamiento puede permitir explorar qué significados atribuyen aprendices e instructores a la investigación y a los semilleros.</td><td><span class="tag inf">Inferencia para el proyecto</span></td><td>Aplicación sugerida a partir de pp. 358–362</td></tr>
+<tr><td>Oportunidades</td><td>Las notas de campo, bitácoras, mapas, fotografías y medios audiovisuales pueden apoyar la inmersión y documentación del contexto.</td><td><span class="tag fact">Hecho del PDF</span></td><td>p. 357</td></tr>
+<tr><td>Debilidades</td><td>El planteamiento cualitativo inicial es abierto y menos delimitado; requiere ajustes conforme evoluciona el estudio.</td><td><span class="tag fact">Hecho del PDF</span></td><td>pp. 357, 361</td></tr>
+<tr><td>Debilidades</td><td>Para un equipo que necesita un plan cerrado desde el inicio, la naturaleza emergente del proceso puede exigir acuerdos de seguimiento y documentación.</td><td><span class="tag inf">Inferencia para el proyecto</span></td><td>Derivada de pp. 356–357, 361</td></tr>
+<tr><td>Amenazas</td><td>La viabilidad depende del tiempo, los recursos y las capacidades disponibles; el acceso al campo puede limitar el estudio.</td><td><span class="tag fact">Hecho del PDF</span></td><td>pp. 360–361</td></tr>
+<tr><td>Amenazas</td><td>Si no se logra acceso a participantes o escenarios pertinentes, será necesario reconsiderar el alcance o el contexto.</td><td><span class="tag inf">Inferencia apoyada en ejemplo</span></td><td>p. 361</td></tr>
+</tbody></table></div><p class="notice">Nota metodológica: DOFA es una organización analítica elaborada para este informe. El PDF no presenta una matriz DOFA ni califica explícitamente fortalezas, debilidades, oportunidades o amenazas.</p></div></section>
+<section id="juegos" class="panel"><div class="card"><div class="game-head"><div><h2>Laboratorio de gamificación</h2><p class="muted">Practica conceptos del capítulo. Las respuestas correctas se basan en el PDF y muestran su página de referencia.</p></div><div><span class="pill" id="totalScore">Puntaje total: 0</span></div></div><div class="game-tabs"><button class="active" data-game="match">1 · Emparejar</button><button data-game="roulette">2 · Ruleta de 10 preguntas</button><button data-game="race">3 · Carrera cualitativa</button></div>
+<div class="game active" id="match"><div class="game-head"><div><h3>Emparejamiento de conceptos</h3><p class="muted">Selecciona un concepto y luego su definición. También puedes arrastrar una tarjeta sobre otra.</p></div><button class="btn danger" id="resetMatch">Reiniciar juego</button></div><div class="match-grid"><div><h3>Conceptos</h3><div class="term-list" id="terms"></div></div><div><h3>Definiciones</h3><div class="term-list" id="defs"></div></div></div><div class="feedback" id="matchFeedback" aria-live="polite">Empareja los seis conceptos para completar el reto.</div><p class="muted" id="matchScore">Aciertos: 0 de 6</p></div>
+<div class="game" id="roulette"><div class="game-head"><div><h3>Ruleta de conocimiento</h3><p class="muted">Diez preguntas de opción múltiple, una por giro.</p></div><button class="btn danger" id="resetQuiz">Reiniciar ruleta</button></div><div class="quiz-box"><div class="roulette" id="wheel">10</div><div class="quiz-meta"><span id="quizCount">Pregunta 1 de 10</span><span id="quizPoints">Puntos: 0</span></div><div class="progress"><i id="quizProgress"></i></div><div class="question" id="quizQuestion"></div><div class="answers" id="quizAnswers"></div><div class="feedback" id="quizFeedback">Selecciona una respuesta para avanzar.</div><button class="btn primary" id="nextQuestion" disabled style="margin-top:12px">Siguiente pregunta</button></div></div>
+<div class="game" id="race"><div class="game-head"><div><h3>Carrera del conocimiento</h3><p class="muted">Responde una pregunta por turno. Acierto: avanzas según el dado + 1; error: retrocedes 1 casilla. El tablero es una representación lúdica, no un dato del PDF.</p></div><button class="btn danger" id="resetRace">Reiniciar carrera</button></div><div class="race-layout"><div class="board" id="board" aria-label="Tablero rectangular perimetral"></div><aside class="race-side"><div class="card"><div class="dice" id="dice">⚄</div><button class="btn primary" id="rollDice" style="width:100%">Lanzar dado y responder</button><div class="scoreline"><span>Posición</span><b id="position">1 / 20</b></div><div class="scoreline"><span>Aciertos</span><b id="raceCorrect">0</b></div><div class="scoreline"><span>Turnos</span><b id="raceTurns">0</b></div></div><div class="card"><h3 id="raceQuestionTitle">Listo para comenzar</h3><div id="raceQuestion" class="muted">Lanza el dado para recibir una pregunta del capítulo.</div><div class="answers" id="raceAnswers" style="margin-top:10px"></div><div class="feedback" id="raceFeedback">¡Llega a la meta!</div></div></aside></div></div>
+</div></section>
+<section id="fuente" class="panel"><div class="grid two"><article class="card"><h2>Ficha de la fuente</h2><ul class="source-list"><li><b>Obra:</b> Metodología de la investigación, sexta edición.</li><li><b>Capítulo:</b> 12. El inicio del proceso cualitativo.</li><li><b>Subtítulo:</b> Planteamiento del problema, revisión de la literatura, surgimiento de las hipótesis e inmersión en el campo.</li><li><b>Fragmento:</b> páginas impresas 356–364; 9 páginas del archivo PDF.</li><li><b>Autor citado en el propio texto:</b> Roberto Hernández-Sampieri y colaboradores (la portada bibliográfica no está incluida en el fragmento).</li></ul></article><article class="card"><h2>Mapa de páginas</h2><div id="pageMap"></div></article></div><div class="card" style="margin-top:15px"><h2>Reglas de fidelidad documental</h2><ul><li>Las cifras visibles del informe provienen del fragmento: 9 páginas, 6 componentes, 3 rasgos del proceso y 4 aspectos enumerados en la página 362.</li><li>Las preguntas de los juegos tienen respuestas verificables en el texto y muestran páginas impresas.</li><li>Las recomendaciones para el proyecto se identifican como inferencias, no como afirmaciones de los autores.</li><li>El fragmento no contiene resultados empíricos sobre aprendices del SENA, motivaciones reales, tasas de participación ni evaluación de semilleros.</li><li>El documento aborda el inicio del proceso cualitativo; no desarrolla en estas páginas una explicación completa de la metodología IAP.</li></ul></div></section>
+
+<section id="excelPanel" class="panel">
+ <div class="excel-shell">
+  <article class="excel-card">
+   <h2>1. Cargar plantilla Excel</h2>
+   <p class="excel-hint">Se espera la hoja <b>FichaProyecto</b>. Los valores se leen de la columna C, en filas específicas.</p>
+   <label class="excel-drop" id="excelDrop" for="excelFile">
+    <b>Arrastra el archivo aquí o haz clic para seleccionarlo</b>
+    <small>Formatos admitidos: .xlsx y .xls · procesamiento local en el navegador</small>
+   </label>
+   <input class="excel-file" id="excelFile" type="file" accept=".xlsx,.xls">
+   <div class="excel-actions">
+    <label class="primary" for="excelFile">Seleccionar archivo</label>
+    <button id="excelReset" type="button">Limpiar</button>
+   </div>
+  </article>
+  <article class="excel-card">
+   <h2>2. Validación de lectura</h2>
+   <p class="excel-hint">Se revisan las etiquetas de la columna B y los datos de la columna C.</p>
+   <div id="excelStatus" class="excel-status">Esperando un archivo Excel.</div>
+   <div class="excel-meta">
+    <div><span>Archivo</span><b id="excelFilename">—</b></div>
+    <div><span>Hoja</span><b id="excelSheetname">—</b></div>
+    <div><span>Campos con datos</span><b id="excelCount">0 / 19</b></div>
+   </div>
+   <div id="excelValidation" class="excel-validation" hidden></div>
+  </article>
+ </div>
+ <div id="excelEmpty" class="excel-empty">
+  <div style="font-size:34px">▤</div><h2>Ficha pendiente de cargar</h2>
+  <p>Selecciona el archivo Excel para presentar los 19 campos en cinco secciones.</p>
+ </div>
+ <div id="excelRecord" class="excel-record">
+  <div class="excel-record-head">
+   <div>
+    <div class="eyebrow" style="color:#2864dc">Ficha de proyecto</div>
+    <h2 id="excelTitle">Proyecto sin título</h2>
+    <p id="excelSubtitle">Información extraída de la plantilla Excel</p>
+    <div class="excel-pills"><span class="excel-pill" id="excelCode">Código: —</span><span class="excel-pill" id="excelType">Tipo: —</span><span class="excel-pill state" id="excelState">Estado: —</span></div>
+   </div>
+   <div class="excel-record-actions">
+    <button class="dark" id="excelPrint" type="button">Imprimir / Guardar PDF</button>
+    <button id="excelAnother" type="button">Cargar otro Excel</button>
+   </div>
+  </div>
+  <div id="excelSections"></div>
+ </div>
+</section>
+
+
+<section id="pdfPanel" class="panel">
+ <div class="pdf-layout">
+  <article class="pdf-card">
+   <div class="eyebrow">FICHA 06 · ANÁLISIS DOCUMENTAL</div>
+   <h2>Cargar documento PDF</h2>
+   <p class="muted">Selecciona un PDF con texto seleccionable. El procesamiento se realiza localmente en este navegador; no se envía el archivo a un servidor.</p>
+   <label class="pdf-drop" id="pdfDrop" for="pdfFile">
+    <b>Arrastra el PDF aquí o haz clic para seleccionarlo</b>
+    <small>Formato admitido: .pdf · Se conserva el archivo original</small>
+   </label>
+   <input class="pdf-hidden-file" id="pdfFile" type="file" accept="application/pdf,.pdf">
+   <div class="pdf-actions"><button class="primary" id="pdfChoose" type="button">Seleccionar PDF</button><button id="pdfReset" type="button">Limpiar análisis</button></div>
+   <div class="pdf-status" id="pdfStatus" role="status" aria-live="polite">Esperando un documento PDF.</div>
+   <p class="pdf-small" id="pdfFileMeta">No hay documento cargado.</p>
+  </article>
+  <article class="pdf-card">
+   <h2>Alcance y criterios de lectura</h2>
+   <ul class="source-list">
+    <li>Los indicadores describen el archivo procesado: páginas, palabras, cifras detectadas y términos frecuentes.</li>
+    <li>El resumen narrativo se construye a partir del texto extraído; no sustituye una lectura crítica del documento.</li>
+    <li>Los hechos se muestran como fragmentos textuales con página de origen.</li>
+    <li>Las inferencias se etiquetan expresamente y no se presentan como afirmaciones del autor.</li>
+    <li>Los juegos se generan con fragmentos extraídos y conservan sus referencias de página.</li>
+   </ul>
+   <p class="callout"><b>Limitación:</b> los PDF escaneados como imágenes pueden no contener texto extraíble. En ese caso se informará que se requiere OCR externo; esta ficha no inventará cifras ni respuestas.</p>
+  </article>
+ </div>
+ <div id="pdfReport" hidden>
+  <div class="pdf-kpis" id="pdfKpis"></div>
+  <section class="pdf-section"><h2>01 · Informe ejecutivo</h2><p class="muted" id="pdfDocTitle"></p><div class="pdf-layout"><div><h3>Indicadores documentales</h3><div class="pdf-chart" id="pdfIndicators"></div></div><div><h3>Resumen narrativo</h3><p class="narrative" id="pdfNarrative"></p><p class="pdf-small" id="pdfNarrativeRefs"></p></div></div></section>
+  <section class="pdf-section"><h2>02 · Evidencias verificables del documento</h2><p class="pdf-small">Fragmentos extraídos directamente del PDF. Cada elemento conserva su número de página.</p><div id="pdfEvidence"></div></section>
+  <section class="pdf-section"><h2>03 · Matriz DOFA documental</h2><p class="muted">La clasificación estratégica es una lectura analítica de este informe. La evidencia textual y la inferencia se mantienen separadas.</p><div class="table-wrap"><table class="dofa"><thead><tr><th>Dimensión</th><th>Hecho o evidencia del PDF</th><th>Inferencia analítica</th><th>Referencia</th></tr></thead><tbody id="pdfDofa"></tbody></table></div></section>
+  <section class="pdf-section"><div class="game-head"><div><h2>04 · Zona de gamificación</h2><p class="muted">Preguntas y asociaciones generadas exclusivamente a partir del texto extraído.</p></div><span class="pill" id="pdfGameScore">Puntaje: 0</span></div>
+   <div class="pdf-game-tabs"><button class="active" data-pdfgame="pdfMatch">1 · Emparejar</button><button data-pdfgame="pdfRoulette">2 · Ruleta (10)</button><button data-pdfgame="pdfRace">3 · Carrera</button></div>
+   <div class="pdf-game active" id="pdfMatch"><div class="game-head"><div><h3>Emparejamiento de conceptos</h3><p class="pdf-small">Selecciona un concepto y después su fragmento explicativo, o arrastra el concepto a la definición.</p></div><button class="btn danger" id="pdfMatchReset">Reiniciar</button></div><div class="pdf-match-grid"><div><h3>Conceptos</h3><div id="pdfTerms"></div></div><div><h3>Fragmentos del PDF</h3><div id="pdfDefinitions"></div></div></div><div class="pdf-feedback" id="pdfMatchFeedback">Carga un PDF para preparar el ejercicio.</div></div>
+   <div class="pdf-game" id="pdfRoulette"><div class="game-head"><div><h3>Ruleta de conocimiento</h3><p class="pdf-small">Diez preguntas de opción múltiple construidas desde el contenido disponible.</p></div><button class="btn danger" id="pdfQuizReset">Reiniciar</button></div><div class="quiz-box"><div class="roulette" id="pdfWheel">10</div><div class="quiz-meta"><span id="pdfQuizCount">Pregunta 1 de 10</span><span id="pdfQuizPoints">Puntos: 0</span></div><div class="progress"><i id="pdfQuizProgress"></i></div><div class="question" id="pdfQuizQuestion">Carga un PDF para generar las preguntas.</div><div class="pdf-game-answer" id="pdfQuizAnswers"></div><div class="pdf-feedback" id="pdfQuizFeedback">Las respuestas mostrarán su página de referencia.</div><button class="btn primary" id="pdfQuizNext" disabled style="margin-top:12px">Siguiente pregunta</button></div></div>
+   <div class="pdf-game" id="pdfRace"><div class="game-head"><div><h3>Carrera documental</h3><p class="pdf-small">Acierto: avanzas el resultado del dado. Error: retrocedes dos casillas. Tablero didáctico, no es un dato del PDF.</p></div><button class="btn danger" id="pdfRaceReset">Reiniciar</button></div><div class="pdf-layout"><div class="pdf-board" id="pdfBoard"></div><div class="pdf-card"><div class="dice" id="pdfDice">⚄</div><button class="btn primary" id="pdfRoll" style="width:100%">Lanzar dado y responder</button><div class="scoreline"><span>Posición</span><b id="pdfPosition">1 / 20</b></div><div class="scoreline"><span>Turnos</span><b id="pdfTurns">0</b></div><h3 id="pdfRaceQuestionTitle">Listo para comenzar</h3><div id="pdfRaceQuestion" class="muted">Lanza el dado para recibir una pregunta.</div><div class="pdf-game-answer" id="pdfRaceAnswers"></div><div class="pdf-feedback" id="pdfRaceFeedback">¡Llega a la meta!</div></div></div></div>
+  </section>
+ </div>
+ 
+<section id="teamsPanel" class="panel">
+ <div class="teams-layout">
+  <article class="teams-card">
+   <div class="teams-hero"><div class="teams-logo">◉</div><div><div class="eyebrow">FICHA 07 · COLABORACIÓN VIRTUAL</div><h2 style="margin:2px 0">Sala audiovisual · Meet y Teams</h2><p class="muted" style="margin:0">Prepara tu cámara y micrófono, crea una reunión externa y comparte el enlace con aprendices e instructores.</p></div></div>
+   <h3>1. Selecciona la plataforma y crea tu reunión</h3>
+   <div class="provider-actions"><button type="button" id="chooseMeet" class="active">Google Meet</button><button type="button" id="chooseTeams">Microsoft Teams</button></div>
+   <div class="teams-note" id="providerHelp">Se abrirá Google Meet para crear una reunión. Cuando la plataforma genere el enlace, cópialo y pégalo en el campo de abajo.</div>
+   <div class="teams-actions"><button class="primary" id="createProviderMeeting" type="button">Crear reunión en Google Meet</button></div>
+   <label for="teamsMeetingName">Nombre de la sala / semillero</label><input id="teamsMeetingName" placeholder="Ej. Encuentro semillero de investigación">
+   <label for="teamsMeetingUrl">Enlace de la reunión</label><input id="teamsMeetingUrl" type="url" placeholder="Pega aquí el enlace de Google Meet o Teams">
+   <label for="teamsParticipant">Nombre del participante</label><input id="teamsParticipant" placeholder="Nombre completo">
+   <label for="teamsEmail">Correo institucional o de contacto</label><input id="teamsEmail" type="email" placeholder="nombre@misena.edu.co">
+   <label for="teamsReason">Motivo o mensaje para el organizador (opcional)</label><textarea id="teamsReason" placeholder="Ej. Solicito ingresar al encuentro del semillero..."></textarea>
+   <div class="teams-device-box">
+    <h3>2. Sala de preparación: cámara y micrófono</h3>
+    <p class="teams-device-note">Activa los dispositivos, comprueba tu imagen y verifica el nivel de audio. Esta vista previa es privada y local hasta que ingreses a Meet o Teams.</p>
+    <video id="teamsLocalVideo" autoplay playsinline muted></video>
+    <div class="teams-device-meter"><span id="teamsMicMeter"></span></div><div class="teams-device-state" id="teamsDeviceState">Cámara y micrófono apagados.</div>
+    <div class="teams-actions"><button class="primary" id="teamsStartDevices" type="button">Activar cámara y micrófono</button><button id="teamsToggleMic" type="button" disabled>Silenciar micrófono</button><button id="teamsToggleCamera" type="button" disabled>Apagar cámara</button><button id="teamsStopDevices" type="button" disabled>Detener dispositivos</button></div>
+   </div>
+
+   <div class="teams-device-box" id="p2pCallBox">
+    <h3>3. Videollamada directa desde esta ficha</h3>
+    <p class="teams-device-note">Conecta dos computadores en una llamada de audio y video en tiempo real. Una persona crea la sala y comparte el código; la otra lo introduce para unirse.</p>
+    <div class="room-grid">
+     <div><label for="p2pRoomCode">Código de sala</label><input id="p2pRoomCode" placeholder="Se genera al crear la sala" autocomplete="off"></div>
+     <div><label for="p2pDisplayName">Tu nombre</label><input id="p2pDisplayName" placeholder="Ej. Instructor / Aprendiz"></div>
+    </div>
+    <div class="teams-actions"><button class="primary" id="p2pCreate" type="button">Crear sala y esperar</button><button id="p2pJoin" type="button">Unirme con código</button><button id="p2pCopy" type="button" disabled>Copiar código</button><button class="danger" id="p2pHangup" type="button" disabled>Finalizar llamada</button></div>
+    <div class="teams-status" id="p2pStatus" role="status" aria-live="polite">Aún no hay una llamada activa. Autoriza cámara y micrófono cuando el navegador lo solicite.</div>
+    <div class="room-grid" style="margin-top:12px">
+     <div><b>Tu cámara</b><video id="p2pLocal" autoplay playsinline muted style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#17233b;border-radius:10px;margin-top:8px"></video></div>
+     <div><b>Participante remoto</b><video id="p2pRemote" autoplay playsinline style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#17233b;border-radius:10px;margin-top:8px"></video></div>
+    </div>
+    <p class="teams-device-note">Esta tarjeta establece una llamada directa entre dos participantes mediante WebRTC y el servicio público de señalización de PeerJS. Para grupos de más de dos personas se necesita un servidor de salas/medio o una plataforma de videoconferencia.</p>
+   </div>
+
+   <div class="teams-actions"><button class="primary" id="teamsJoin" type="button">Entrar a la sala</button><button id="teamsCopy" type="button">Copiar invitación</button><button id="teamsOpen" type="button">Abrir plataforma</button></div>
+   <div class="teams-status" id="teamsStatus" role="status" aria-live="polite">Selecciona Meet o Teams, crea la reunión y pega el enlace generado.</div>
+  </article>
+  <aside class="teams-card">
+   <h2>Panel de salas y participantes</h2><p>Usa esta tarjeta como punto de acceso para las salas de videoconferencia de los semilleros.</p>
+   <div class="room-grid"><div class="room-tile"><b>🎥 Cámara</b><span class="teams-device-note">Vista previa y encendido/apagado local.</span></div><div class="room-tile"><b>🎙️ Micrófono</b><span class="teams-device-note">Silenciar, activar y comprobar nivel.</span></div><div class="room-tile"><b>🔗 Enlace de sala</b><span class="teams-device-note">Pegar y compartir enlace Meet o Teams.</span></div><div class="room-tile"><b>👥 Participantes</b><span class="teams-device-note">Se admiten desde la plataforma externa.</span></div></div>
+   <div class="teams-note" style="margin-top:14px"><b>Cómo funciona:</b> crea la reunión en Meet o Teams, copia el enlace generado y pégalo en esta ficha. Los participantes abren el mismo enlace y se unen a la videollamada.</div>
+   <h3 style="margin-top:18px">Importante sobre las salas</h3><ul class="teams-list"><li>Este HTML no crea por sí mismo una videollamada grupal ni transmite el vídeo a otros equipos.</li><li>La llamada, la sala de espera, los permisos y la admisión se gestionan dentro de Google Meet o Microsoft Teams.</li><li>La vista previa local sirve para probar los dispositivos antes de entrar.</li><li>Para crear enlaces automáticamente desde el HTML se necesitaría integrar las API oficiales, autenticación institucional y un backend.</li></ul>
+   <p class="pdf-small">El acceso a cámara y micrófono requiere HTTPS o localhost, navegador compatible y permisos concedidos.</p>
+  </aside>
+ </div>
+</section>
+
+<footer class="foot">Ficha 06 · Informe ejecutivo generado desde el PDF seleccionado · Análisis local en el navegador · Verifica siempre los fragmentos y páginas en el documento original.</footer>
+</section>
+
+<footer class="foot">Artefacto autónomo · HTML, CSS y JavaScript vanilla · No requiere backend ni conexión. Contenido analítico limitado al fragmento PDF suministrado. Las dinámicas de juego son recursos didácticos diseñados para esta interfaz.</footer>
+</main>
+<script>
+const components=[['Propósito y objetivos','p. 358–359'],['Preguntas de investigación','p. 358–359'],['Justificación','p. 358–360'],['Viabilidad','p. 358–360'],['Deficiencias en el conocimiento','p. 358–360'],['Ambiente o contexto inicial','p. 358–359']];
+document.getElementById('componentBars').innerHTML=components.map(([n,p])=>`<div class="bar-row"><span>${n}</span><div class="track"><div class="fill" style="width:100%"></div></div><span>✓</span></div>`).join('');
+const pageTopics=[['356','Inicio del proceso cualitativo y síntesis'],['357','Esquema del proceso, inmersión e hipótesis'],['358','Esencia cualitativa y planteamiento'],['359','Sugerencias para formular el propósito'],['360','Preguntas, justificación y viabilidad'],['361','Comparación cualitativo/cuanti y ejemplo'],['362','Ambiente natural y ajuste del planteamiento'],['363','Visualización gráfica del fenómeno'],['364','Procesos y cierre del fragmento']];
+document.getElementById('pageMap').innerHTML=pageTopics.map(([n,t])=>`<div class="bar-row"><b>p. ${n}</b><div>${t}</div><span class="tag">PDF</span></div>`).join('');
+// Navigation
+for(const b of document.querySelectorAll('.nav button'))b.addEventListener('click',()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.panel').forEach(x=>x.classList.toggle('active',x.id===b.dataset.panel));});
+for(const b of document.querySelectorAll('.game-tabs button'))b.addEventListener('click',()=>{document.querySelectorAll('.game-tabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.game').forEach(x=>x.classList.toggle('active',x.id===b.dataset.game));});
+let scores={match:0,quiz:0,race:0};function updateTotal(){document.getElementById('totalScore').textContent='Puntaje total: '+(scores.match+scores.quiz+scores.race)}
+// Matching activity
+const pairs=[['Inductivo','El proceso parte de la exploración y construye comprensión a partir de los datos.'],['Interpretativo','Busca comprender perspectivas, significados e interpretaciones de los participantes.'],['Iterativo y recurrente','Las acciones de recolección y análisis se retroalimentan; el proceso no es lineal.'],['Viabilidad','Valora tiempo, recursos y capacidades para realizar el estudio.'],['Inmersión en el campo','Ingreso al ambiente para explorarlo y comenzar a recolectar datos.'],['Hipótesis emergentes','Se generan, afinan o modifican durante el proceso; no se prueban estadísticamente.']];let selectedTerm=null,matched=new Set(),dragTerm=null;
+function shuffle(a){return [...a].sort(()=>Math.random()-.5)}function renderMatch(){matched.clear();selectedTerm=null;const t=document.getElementById('terms'),d=document.getElementById('defs');t.innerHTML='';d.innerHTML='';shuffle(pairs).forEach(([name],i)=>{const el=document.createElement('button');el.className='term';el.textContent=name;el.dataset.name=name;el.draggable=true;el.addEventListener('click',()=>{document.querySelectorAll('#terms .term').forEach(x=>x.classList.remove('selected'));selectedTerm=name;el.classList.add('selected');document.getElementById('matchFeedback').textContent='Concepto seleccionado: '+name+'. Ahora selecciona su definición.'});el.addEventListener('dragstart',()=>dragTerm=name);t.append(el)});shuffle(pairs).forEach(([name,desc])=>{const el=document.createElement('button');el.className='term';el.innerHTML=desc+`<small>Selecciona para emparejar</small>`;el.dataset.answer=name;el.addEventListener('click',()=>tryMatch(name,el));el.addEventListener('dragover',e=>e.preventDefault());el.addEventListener('drop',e=>{e.preventDefault();tryMatch(name,el)});d.append(el)});document.getElementById('matchScore').textContent='Aciertos: 0 de 6';document.getElementById('matchFeedback').textContent='Empareja los seis conceptos para completar el reto.';scores.match=0;updateTotal()}
+function tryMatch(name,el){if(!selectedTerm&&!dragTerm){document.getElementById('matchFeedback').textContent='Primero selecciona o arrastra un concepto.';return}const term=selectedTerm||dragTerm;dragTerm=null;selectedTerm=null;document.querySelectorAll('#terms .term').forEach(x=>x.classList.remove('selected'));if(matched.has(name))return;if(term===name){matched.add(name);el.classList.add('correct');[...document.querySelectorAll('#terms .term')].find(x=>x.dataset.name===name).classList.add('correct');scores.match+=10;document.getElementById('matchFeedback').textContent='¡Correcto! '+name+'. Referencia: síntesis y desarrollo del capítulo, pp. 357–360.'}else{el.classList.add('wrong');document.getElementById('matchFeedback').textContent='No coincide. Revisa la definición y vuelve a intentarlo. No se descuentan puntos.';setTimeout(()=>el.classList.remove('wrong'),650)}document.getElementById('matchScore').textContent=`Aciertos: ${matched.size} de 6 · ${scores.match} puntos`;updateTotal();if(matched.size===6)document.getElementById('matchFeedback').textContent='¡Reto completado! 60 puntos. Has relacionado los seis conceptos.'}
+document.getElementById('resetMatch').onclick=renderMatch;renderMatch();
+// Source-grounded quiz bank
+const questions=[
+{q:'¿Cuántos elementos fundamentales señala la síntesis para plantear un problema cualitativo?',a:['Cuatro','Seis','Ocho','Diez'],c:1,p:'p. 356; se desarrollan en pp. 358–359',e:'La síntesis enumera objetivos, preguntas, justificación, viabilidad, deficiencias de conocimiento y contexto.'},
+{q:'¿Cuál conjunto describe el proceso cualitativo en el esquema del capítulo?',a:['Deductivo, experimental y lineal','Inductivo, interpretativo e iterativo/recurrente','Estadístico, causal y predictivo','Descriptivo, correlacional y transversal'],c:1,p:'p. 357',e:'El texto lo caracteriza como inductivo, interpretativo, iterativo y recurrente.'},
+{q:'¿Qué debe valorar la viabilidad de una investigación?',a:['Solo el tamaño de la muestra','Tiempo, recursos y capacidades','Únicamente las hipótesis','La significancia estadística'],c:1,p:'p. 360',e:'La viabilidad se pondera según tiempo, recursos y capacidades.'},
+{q:'En el enfoque cualitativo, ¿desde qué perspectiva se exploran los fenómenos?',a:['Solo desde indicadores institucionales','Desde la perspectiva de los participantes y su contexto','Exclusivamente desde variables controladas','Desde resultados de laboratorio'],c:1,p:'p. 358',e:'El capítulo indica que se busca comprender fenómenos desde la perspectiva de los participantes en su ambiente natural.'},
+{q:'¿Qué recomienda el texto respecto al lenguaje de los objetivos cualitativos?',a:['Que sea neutral y no direccione el resultado','Que anticipe resultados positivos','Que use siempre “demostrar”','Que incluya variables rígidas'],c:0,p:'p. 359',e:'Se recomienda un lenguaje neutral y no direccionado, evitando términos que sugieran un resultado.'},
+{q:'¿Cuál de estos recursos se menciona para apoyar la inmersión en el campo?',a:['Únicamente pruebas estandarizadas','Notas de campo, bitácora, mapas y fotografías','Solo encuestas cerradas','Registros financieros'],c:1,p:'p. 357',e:'El esquema incluye anotaciones o notas de campo, bitácora o diario, mapas, fotografías y medios audiovisuales.'},
+{q:'¿Cómo se comportan las hipótesis en el proceso cualitativo según el esquema?',a:['Se fijan antes de entrar al campo y no cambian','Se prueban estadísticamente al final','Emergen, se afinan y pueden modificarse','Se sustituyen por variables dependientes'],c:2,p:'p. 357',e:'Las hipótesis se generan durante el proceso, se afinan con nuevos datos y pueden modificarse; no se prueban estadísticamente.'},
+{q:'¿Qué distingue los planteamientos cualitativos frente a los cuantitativos en la tabla?',a:['Son abiertos y se enfocan progresivamente','Son siempre más precisos desde el inicio','Exigen muestras grandes representativas','Se orientan solo a probar teorías'],c:0,p:'p. 361',e:'La tabla describe los planteamientos cualitativos como abiertos y expansivos, enfocados paulatinamente.'},
+{q:'¿Qué papel cumplen los significados en la investigación cualitativa?',a:['Se imponen desde el marco teórico','Se toman de los propios participantes','Se convierten siempre en puntuaciones','Se excluyen del análisis'],c:1,p:'p. 362',e:'El texto afirma que los significados se toman de los propios participantes.'},
+{q:'¿Qué sucede con el planteamiento inicial cuando aparecen nuevos datos?',a:['Debe permanecer idéntico','Se elimina toda la revisión de literatura','Puede revisarse, precisarse o modificarse','Se convierte automáticamente en experimento'],c:2,p:'p. 362',e:'El capítulo explica que los datos pueden movilizar el estudio y modificar el problema original.'}
+];let qIndex=0,qScore=0,qAnswered=false;function renderQuestion(){const q=questions[qIndex];qAnswered=false;document.getElementById('quizCount').textContent=`Pregunta ${qIndex+1} de 10`;document.getElementById('quizPoints').textContent='Puntos: '+qScore;document.getElementById('quizProgress').style.width=(qIndex/10*100)+'%';document.getElementById('wheel').textContent=qIndex+1;document.getElementById('quizQuestion').textContent=q.q;document.getElementById('quizAnswers').innerHTML='';q.a.forEach((a,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=String.fromCharCode(65+i)+'. '+a;b.onclick=()=>answerQuiz(i,b);document.getElementById('quizAnswers').append(b)});document.getElementById('quizFeedback').textContent='Selecciona una respuesta para avanzar.';document.getElementById('nextQuestion').disabled=true;document.getElementById('nextQuestion').textContent=qIndex===9?'Ver resultado':'Siguiente pregunta'}function answerQuiz(i,btn){if(qAnswered)return;qAnswered=true;const q=questions[qIndex];[...document.querySelectorAll('#quizAnswers .answer')].forEach((b,j)=>{b.disabled=true;if(j===q.c)b.classList.add('correct')});if(i===q.c){qScore+=10;scores.quiz=qScore;btn.classList.add('correct');document.getElementById('quizFeedback').textContent='¡Correcto! '+q.e+' Referencia: '+q.p+'.'}else{btn.classList.add('incorrect');document.getElementById('quizFeedback').textContent='Respuesta correcta: '+q.a[q.c]+'. '+q.e+' Referencia: '+q.p+'.'}document.getElementById('quizPoints').textContent='Puntos: '+qScore;document.getElementById('nextQuestion').disabled=false;updateTotal()}document.getElementById('nextQuestion').onclick=()=>{if(qIndex<9){qIndex++;renderQuestion()}else{document.getElementById('quizQuestion').textContent=`Terminaste: ${qScore} de 100 puntos.`;document.getElementById('quizAnswers').innerHTML='';document.getElementById('quizFeedback').textContent='Has respondido las diez preguntas. Reinicia para volver a jugar.';document.getElementById('nextQuestion').disabled=true;document.getElementById('quizProgress').style.width='100%'}};document.getElementById('resetQuiz').onclick=()=>{qIndex=0;qScore=0;scores.quiz=0;updateTotal();renderQuestion()};renderQuestion();
+// Perimeter board: 20 spaces mapped around a 6x6 rectangle
+const boardCoords=[[5,0],[5,1],[5,2],[5,3],[5,4],[5,5],[4,5],[3,5],[2,5],[1,5],[0,5],[0,4],[0,3],[0,2],[0,1],[0,0],[1,0],[2,0],[3,0],[4,0]];let racePos=0,raceTurns=0,raceHits=0,raceQ=null,raceLocked=true;const raceBank=shuffle(questions);
+function drawBoard(){const board=document.getElementById('board');board.innerHTML='';for(let r=0;r<6;r++)for(let c=0;c<6;c++){const idx=boardCoords.findIndex(x=>x[0]===r&&x[1]===c);const tile=document.createElement('div');tile.className='tile';if(idx>=0){tile.classList.add(idx===0?'start':idx===19?'finish':'');if(idx===racePos)tile.classList.add('current');tile.innerHTML=`<span class="n">${idx+1}</span><span>${idx===0?'INICIO':idx===19?'META':idx%5===0?'RETO':'CASILLA'}</span>${idx===racePos?'<span class="pawn">🧑‍🚀</span>':''}`}else tile.style.visibility='hidden';board.append(tile)}}
+function updateRace(){drawBoard();document.getElementById('position').textContent=(racePos+1)+' / 20';document.getElementById('raceCorrect').textContent=raceHits;document.getElementById('raceTurns').textContent=raceTurns;document.getElementById('rollDice').disabled=!raceLocked||racePos>=19}
+function roll(){if(!raceLocked||racePos>=19)return;raceLocked=false;const die=1+Math.floor(Math.random()*6);document.getElementById('dice').textContent=['⚀','⚁','⚂','⚃','⚄','⚅'][die-1]+' '+die;raceQ=questions[Math.floor(Math.random()*questions.length)];document.getElementById('raceQuestionTitle').textContent='Pregunta del turno';document.getElementById('raceQuestion').textContent=raceQ.q;const box=document.getElementById('raceAnswers');box.innerHTML='';raceQ.a.forEach((a,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=String.fromCharCode(65+i)+'. '+a;b.onclick=()=>resolveRace(i,b,die);box.append(b)});document.getElementById('raceFeedback').textContent='Dado: '+die+'. Responde para mover tu ficha.';window.currentDie=die}
+function resolveRace(i,btn,die){if(raceLocked)return;raceLocked=true;raceTurns++;const correct=i===raceQ.c;[...document.querySelectorAll('#raceAnswers .answer')].forEach((b,j)=>{b.disabled=true;if(j===raceQ.c)b.classList.add('correct')});if(correct){raceHits++;scores.race+=10;racePos=Math.min(19,racePos+die+1);btn.classList.add('correct');document.getElementById('raceFeedback').textContent='¡Correcto! Avanzas '+(die+1)+' casillas. '+raceQ.e+' ('+raceQ.p+')'}else{btn.classList.add('incorrect');racePos=Math.max(0,racePos-1);document.getElementById('raceFeedback').textContent='Respuesta correcta: '+raceQ.a[raceQ.c]+'. Retrocedes 1 casilla. '+raceQ.e+' ('+raceQ.p+')'}updateTotal();updateRace();if(racePos===19){document.getElementById('raceFeedback').textContent+=' ¡Llegaste a la meta! Puntaje de carrera: '+scores.race+'.'}document.getElementById('rollDice').textContent=racePos===19?'Carrera terminada':'Lanzar siguiente turno'}
+document.getElementById('rollDice').onclick=roll;document.getElementById('resetRace').onclick=()=>{racePos=0;raceTurns=0;raceHits=0;raceLocked=true;scores.race=0;document.getElementById('dice').textContent='⚄';document.getElementById('raceQuestionTitle').textContent='Listo para comenzar';document.getElementById('raceQuestion').textContent='Lanza el dado para recibir una pregunta del capítulo.';document.getElementById('raceAnswers').innerHTML='';document.getElementById('raceFeedback').textContent='¡Llega a la meta!';document.getElementById('rollDice').textContent='Lanzar dado y responder';updateTotal();updateRace()};updateRace();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+(function(){
+ 'use strict';
+ const SHEET='FichaProyecto';
+ const GROUPS=[
+  {name:'Identificación',n:'01',fields:[['Código',5],['Título del proyecto',6,'wide'],['Tipo de investigación',7],['Área temática',8],['Lugar',9],['Responsable',10],['Población objetivo',11],['Año',12]]},
+  {name:'Planteamiento',n:'02',fields:[['Problema identificado',15,'wide'],['Pregunta de investigación',16,'wide']]},
+  {name:'Objetivos',n:'03',fields:[['Objetivo general',19,'wide'],['Objetivo específico 1',20,'wide'],['Objetivo específico 2',21,'wide'],['Objetivo específico 3',22,'wide']]},
+  {name:'Metodología',n:'04',fields:[['Metodología',25,'wide'],['Contexto / muestra',26,'wide']]},
+  {name:'Resultados y seguimiento',n:'05',fields:[['Producto esperado',29,'wide'],['Duración estimada',30],['Estado',31]]}
+ ];
+ const TOTAL=GROUPS.reduce((n,g)=>n+g.fields.length,0),$=id=>document.getElementById(id);
+ const clean=v=>String(v??'').replace(/\s+/g,' ').trim();
+ const norm=v=>clean(v).toLocaleLowerCase('es');
+ const esc=v=>String(v).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ function cell(ws,addr){const c=ws[addr];if(!c)return '';return clean(c.w!==undefined?c.w:c.v)}
+ function status(msg,kind=''){ $('excelStatus').className='excel-status '+kind;$('excelStatus').textContent=msg; }
+ function render(data){
+  $('excelTitle').textContent=data['Título del proyecto']||'Proyecto sin título';
+  $('excelSubtitle').textContent=[data['Lugar'],data['Año']].filter(Boolean).join(' · ')||'Información extraída de la plantilla Excel';
+  $('excelCode').textContent='Código: '+(data['Código']||'—');
+  $('excelType').textContent='Tipo: '+(data['Tipo de investigación']||'—');
+  $('excelState').textContent='Estado: '+(data['Estado']||'—');
+  $('excelSections').innerHTML=GROUPS.map(g=>'<article class="excel-section"><h3><span class="excel-no">'+g.n+'</span>'+esc(g.name)+'</h3><div class="excel-fields">'+
+   g.fields.map(([label,row,size])=>{const value=data[label]||'';return '<div class="excel-field '+(size||'')+'"><span class="excel-label">'+esc(label)+'</span><div class="excel-value '+(value?'':'missing')+'">'+(value?esc(value):'Sin dato en C'+row)+'</div><span class="excel-location">Celda de origen: '+SHEET+'!C'+row+'</span></div>'}).join('')+
+   '</div></article>').join('');
+  $('excelEmpty').style.display='none';$('excelRecord').style.display='block';
+ }
+ function process(wb,file){
+  const errors=[],warnings=[],hasSheet=wb.SheetNames.includes(SHEET),sheetName=hasSheet?SHEET:wb.SheetNames[0],ws=wb.Sheets[sheetName];
+  $('excelFilename').textContent=file.name;$('excelSheetname').textContent=sheetName||'—';
+  if(!hasSheet)errors.push('No existe la hoja "'+SHEET+'". Hojas encontradas: '+(wb.SheetNames.join(', ')||'ninguna')+'.');
+  if(!ws){status('El libro no contiene una hoja que pueda leerse.','bad');return;}
+  const data={};let count=0;
+  GROUPS.forEach(g=>g.fields.forEach(([label,row])=>{
+   const actual=cell(ws,'B'+row),value=cell(ws,'C'+row);
+   if(norm(actual)!==norm(label))errors.push('B'+row+': se esperaba "'+label+'" y se encontró "'+(actual||'celda vacía')+'".');
+   if(value)count++;else warnings.push('Campo "'+label+'" sin diligenciar en C'+row+'.');
+   data[label]=value;
+  }));
+  $('excelCount').textContent=count+' / '+TOTAL;
+  const ref=ws['!ref']||'no disponible',v=$('excelValidation');v.hidden=false;
+  v.innerHTML='<h3>Detalle de validación</h3><ul>'+
+   (errors.length?errors.map(x=>'<li class="excel-issue">Error: '+esc(x)+'</li>').join(''):'<li class="excel-ok">Las etiquetas y posiciones esperadas coinciden.</li>')+
+   warnings.map(x=>'<li class="excel-issue">'+esc(x)+'</li>').join('')+
+   '<li>Rango usado por la hoja: '+esc(ref)+'.</li></ul>';
+  if(errors.length)status('Lectura realizada con diferencias en la plantilla. Verifica los errores indicados.','warn');
+  else if(warnings.length)status('Plantilla reconocida. Hay campos vacíos señalados en la ficha.','warn');
+  else status('Plantilla reconocida y 19 campos diligenciados.','good');
+  render(data);
+ }
+ async function load(file){
+  if(!file)return;
+  if(!/\.(xlsx|xls)$/i.test(file.name)){status('Formato no admitido. Selecciona .xlsx o .xls.','bad');return;}
+  if(typeof XLSX==='undefined'){status('No se pudo cargar SheetJS. Comprueba tu conexión a Internet.','bad');return;}
+  try{status('Leyendo el archivo Excel…');const wb=XLSX.read(await file.arrayBuffer(),{type:'array',cellDates:true});process(wb,file);}
+  catch(e){console.error(e);status('No fue posible leer el archivo. Puede estar dañado o protegido.','bad');}
+ }
+ $('excelFile').addEventListener('change',e=>load(e.target.files[0]));
+ $('excelDrop').addEventListener('dragover',e=>{e.preventDefault();$('excelDrop').classList.add('drag');});
+ $('excelDrop').addEventListener('dragleave',()=>$('excelDrop').classList.remove('drag'));
+ $('excelDrop').addEventListener('drop',e=>{e.preventDefault();$('excelDrop').classList.remove('drag');load(e.dataTransfer.files[0]);});
+ $('excelPrint').addEventListener('click',()=>{document.body.classList.add('excel-printing');window.print();});
+ window.addEventListener('afterprint',()=>document.body.classList.remove('excel-printing'));
+ $('excelAnother').addEventListener('click',()=>$('excelFile').click());
+ $('excelReset').addEventListener('click',()=>{
+  $('excelFile').value='';$('excelFilename').textContent='—';$('excelSheetname').textContent='—';$('excelCount').textContent='0 / '+TOTAL;
+  $('excelValidation').hidden=true;$('excelValidation').innerHTML='';$('excelRecord').style.display='none';$('excelEmpty').style.display='block';status('Esperando un archivo Excel.');
+ });
+})();
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(function(){
+ 'use strict';
+ const $=id=>document.getElementById(id);
+ const status=(msg,kind='')=>{$('pdfStatus').className='pdf-status '+kind;$('pdfStatus').textContent=msg;};
+ let pages=[],facts=[],pairs=[],quiz=[],quizIndex=0,quizScore=0,quizLocked=false,selected=null,matched=new Set(),gameScore=0;
+ let racePos=0,raceTurns=0,raceLocked=true,raceQuestion=null;
+ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const shuffle=a=>[...a].sort(()=>Math.random()-.5);
+ const clean=s=>String(s||'').replace(/\s+/g,' ').trim();
+ function sentences(text){
+  return text.split(/(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ¿])/u).map(clean).filter(s=>s.length>=55&&s.length<=420);
+ }
+ function pageSentences(){return pages.flatMap((p,i)=>sentences(p).map(text=>({text,page:i+1})))}
+ function extractFacts(items){
+  const out=[],seen=new Set();
+  for(const item of items){
+   if(/\d/.test(item.text)&&!seen.has(item.text)){
+    seen.add(item.text);out.push(item);
+   }
+  }
+  return out.slice(0,12);
+ }
+ function makeTerms(items){
+  const stop=new Set(('para como desde entre sobre hasta donde cuando cual cuáles este esta estos estas porque pero también mediante durante según puede pueden debe deben sido será fueron tiene tienen han del las los una uno unos unas con por sin sus más muy cada otro otra otros otras mismo misma así').split(' '));
+  const counts=new Map(),contexts=new Map();
+  items.forEach(it=>{
+   const words=(it.text.toLocaleLowerCase('es').match(/[a-záéíóúñ]{5,}/g)||[]);
+   words.forEach(w=>{if(!stop.has(w)){counts.set(w,(counts.get(w)||0)+1);if(!contexts.has(w))contexts.set(w,it)}});
+  });
+  return [...counts.entries()].filter(([w,n])=>n>=2).sort((a,b)=>b[1]-a[1]).slice(0,8).map(([word])=>({word,context:contexts.get(word)}));
+ }
+
+ function extractMetrics(items){
+  const found=[],seen=new Set();
+  const re=/\b(?:\d{1,3}(?:[.,]\d{3})+|\d+(?:[.,]\d+)?\s?%?|\d+\s?(?:años?|meses?|días?|personas?|participantes?|instituciones?|millones?|mil|horas?|páginas?))\b/gi;
+  items.forEach(it=>{
+   const matches=[...it.text.matchAll(re)];
+   matches.forEach(m=>{
+    const value=clean(m[0]),key=value.toLocaleLowerCase('es')+'|'+it.page;
+    if(!seen.has(key)){seen.add(key);found.push({value,text:it.text,page:it.page});}
+   });
+  });
+  return found.slice(0,16);
+ }
+ function extractHeadings(){
+  const out=[];
+  pages.forEach((text,i)=>{
+   text.split(/\s{2,}|(?<=[.!?])\s+/).map(clean).filter(x=>x.length>3&&x.length<100).forEach(x=>{
+    if(/^[\dIVX]+[.)\s-]+[A-ZÁÉÍÓÚÑ]/.test(x)||(/^[A-ZÁÉÍÓÚÑ][A-ZÁÉÍÓÚÑ\s:–-]{5,}$/.test(x)&&x.split(' ').length<14))out.push({text:x,page:i+1});
+   });
+  });
+  return out.slice(0,18);
+ }
+ function renderIndicators(items){
+  const all=pages.join(' '),words=(all.match(/\b[\p{L}\p{N}]+\b/gu)||[]).length;
+  const metrics=extractMetrics(items),headings=extractHeadings();
+  const data=[['Páginas analizadas',pages.length],['Palabras extraídas',words],['Cifras o cantidades detectadas',metrics.length],['Apartados o encabezados detectados',headings.length]];
+  $('pdfKpis').innerHTML=data.map(([n,v])=>`<div class="pdf-kpi"><span>${n.toLocaleUpperCase('es')}</span><b>${v.toLocaleString('es')}</b></div>`).join('');
+  const max=Math.max(1,...data.map(x=>x[1]));
+  $('pdfIndicators').innerHTML=data.map(([n,v])=>`<div class="pdf-chart-row"><b>${n}</b><div class="pdf-chart-track"><div class="pdf-chart-fill" style="width:${Math.max(2,v/max*100)}%"></div></div><span>${v}</span></div>`).join('')+
+   `<h3 style="margin-top:16px">Cifras identificadas en el contenido</h3>`+
+   (metrics.length?metrics.slice(0,8).map(m=>`<div class="pdf-fact"><b>${esc(m.value)} · p. ${m.page}</b><div>${esc(m.text)}</div></div>`).join(''):'<p class="muted">No se detectaron cifras en el texto extraído.</p>');
+ }
+ function chooseEvidence(items,positive){
+  const terms=positive?/(fortale|logr|avance|benefic|mejor|éxito|crec|aument|increment|cumpl|oportun|capacidad|resultado positivo|fortalec)/i:/(dificult|problema|riesgo|amenaz|limit|barrera|déficit|bajo|dismin|redu|obstácul|debil|carencia|falta|brecha)/i;
+  return items.filter(x=>terms.test(x.text)).slice(0,3);
+ }
+ function renderReport(fileName){
+  const items=pageSentences();facts=extractFacts(items);
+  const wordCount=pages.join(' ').split(/\s+/).filter(Boolean).length;
+  const headings=extractHeadings();
+  const intro=items.slice(0,5);
+  const topicTerms=makeTerms(items).slice(0,8).map(x=>x.word);
+  $('pdfDocTitle').textContent='Documento analizado: '+fileName;
+  const headingText=headings.length?headings.map(x=>x.text).join(' · '):'No se detectaron encabezados con suficiente claridad en la extracción.';
+  const introText=intro.map(x=>x.text).join(' ');
+  $('pdfNarrative').textContent=`El documento "${fileName}" fue procesado en ${pages.length} páginas y se extrajeron aproximadamente ${wordCount.toLocaleString('es')} palabras. El texto inicial presenta el siguiente contenido: ${introText.slice(0,950)}${introText.length>950?'…':''} Los términos que más se repiten en el texto incluyen: ${topicTerms.join(', ')||'no se identificaron términos recurrentes'}. Esta síntesis se construye con el texto disponible y puede requerir revisión humana cuando el PDF contiene tablas, columnas, gráficos o páginas escaneadas.`;
+  $('pdfNarrativeRefs').textContent='Apartados/encabezados detectados: '+headingText;
+  $('pdfEvidence').innerHTML=facts.length?facts.map(f=>`<div class="pdf-fact"><b>Fragmento con cifra · página ${f.page}</b><div>${esc(f.text)}</div></div>`).join(''):'<p class="muted">No se identificaron oraciones con cifras en el texto extraído. No se mostrarán cifras inferidas.</p>';
+  const strengths=chooseEvidence(items,true),risks=chooseEvidence(items,false);
+  const neutral=items.filter(x=>!strengths.includes(x)&&!risks.includes(x));
+  const rows=[
+   ['Fortalezas',strengths,'Se interpreta que los aspectos positivos descritos podrían constituir capacidades o resultados favorables.'],
+   ['Oportunidades',neutral.slice(0,3),'Se interpreta que estos temas neutrales podrían convertirse en líneas de mejora o desarrollo; el PDF no necesariamente los denomina oportunidades.'],
+   ['Debilidades',risks,'Se interpreta que las dificultades o limitaciones descritas pueden afectar el desempeño o alcance.'],
+   ['Amenazas',risks.slice(0,3),'Se interpreta que los riesgos o barreras mencionados podrían comprometer resultados futuros.']
+  ];
+  $('pdfDofa').innerHTML=rows.map(([label,arr,inference])=>`<tr><td>${label}</td><td>${arr.length?arr.map(x=>esc(x.text)+' <b>(p. '+x.page+')</b>').join('<hr>'):'No se encontró evidencia textual explícita mediante los criterios automáticos. No se asigna un hecho.'}</td><td><span class="tag inf">Inferencia analítica</span> ${inference}</td><td>${arr.length?arr.map(x=>'p. '+x.page).join(', '):'Sin evidencia localizada'}</td></tr>`).join('');
+  renderIndicators(items);buildGames(items);
+ }
+ function buildGames(items){
+  const terms=makeTerms(items).slice(0,6);
+  pairs=terms.map(t=>({term:t.word,definition:t.context.text,page:t.context.page}));
+  if(pairs.length<3){
+   pairs=items.filter(x=>x.text.length>70).slice(0,6).map((x,i)=>({term:'Idea clave '+(i+1),definition:x.text,page:x.page}));
+  }
+  renderMatch();
+  // Preguntas de recuperación literal: se oculta un término relevante de una oración real.
+  const stop=new Set(('para como desde entre sobre hasta donde cuando cual cuáles este esta estos estas porque pero también mediante durante según puede pueden debe deben sido será fueron tiene tienen han del las los una uno unos unas con por sin sus más muy cada otro otra otros otras mismo misma así').split(' '));
+  const questionPool=items.filter(x=>x.text.length>65&&x.text.length<360).map(item=>{
+   const words=(item.text.match(/[A-Za-zÁÉÍÓÚÑáéíóúñ]{5,}/g)||[]);
+   const candidate=words.filter(w=>!stop.has(w.toLocaleLowerCase('es'))).sort((a,b)=>b.length-a.length)[0];
+   if(!candidate)return null;
+   const distractors=shuffle([...new Set(makeTerms(items).map(t=>t.word).filter(w=>w.toLocaleLowerCase('es')!==candidate.toLocaleLowerCase('es')))]).slice(0,3);
+   if(distractors.length<3)return null;
+   const opts=shuffle([candidate,...distractors]);
+   return {q:`Complete la afirmación del documento (página ${item.page}): “${item.text.replace(new RegExp(candidate.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'i'),'________')}”`,opts,correct:opts.findIndex(x=>x.toLocaleLowerCase('es')===candidate.toLocaleLowerCase('es')),page:item.page,source:item.text};
+  }).filter(Boolean);
+  quiz=shuffle(questionPool).slice(0,10);
+  if(quiz.length<10){
+   const extras=items.filter(x=>x.text.length>60).slice(0,10-quiz.length).map(x=>({q:`¿En qué página aparece este fragmento? “${x.text.slice(0,160)}…”`,opts:shuffle([String(x.page),...shuffle(pages.map((_,i)=>String(i+1)).filter(n=>n!==String(x.page))).slice(0,3)]),correct:0,page:x.page,source:x.text}));
+   extras.forEach(q=>{q.correct=q.opts.indexOf(String(q.page));quiz.push(q);});
+  }
+  resetQuiz();resetRace();
+ }
+ function renderMatch(){
+  matched.clear();selected=null;
+  const left=$('pdfTerms'),right=$('pdfDefinitions');left.innerHTML='';right.innerHTML='';
+  const defs=shuffle(pairs);
+  pairs.forEach(p=>{
+   const b=document.createElement('button');b.className='pdf-choice';b.textContent=p.term;b.draggable=true;
+   b.onclick=()=>{selected=p.term;document.querySelectorAll('#pdfTerms .pdf-choice').forEach(x=>x.classList.toggle('selected',x.textContent===selected));$('pdfMatchFeedback').textContent='Concepto seleccionado: '+p.term+'. Selecciona su fragmento.';};
+   b.ondragstart=()=>{selected=p.term;};
+   left.append(b);
+  });
+  defs.forEach(p=>{
+   const b=document.createElement('button');b.className='pdf-choice';b.textContent=p.definition+' (p. '+p.page+')';b.dataset.term=p.term;
+   b.onclick=()=>matchTry(p.term,b);b.ondragover=e=>e.preventDefault();b.ondrop=e=>{e.preventDefault();matchTry(p.term,b);};right.append(b);
+  });
+  $('pdfMatchFeedback').textContent=`Empareja ${pairs.length} conceptos con sus evidencias.`;
+ }
+ function matchTry(term,b){
+  if(!selected){$('pdfMatchFeedback').textContent='Selecciona primero un concepto.';return;}
+  if(matched.has(term))return;
+  if(selected===term){matched.add(term);b.classList.add('correct');[...$('pdfTerms').children].find(x=>x.textContent===term)?.classList.add('correct');gameScore+=10;$('pdfMatchFeedback').textContent=`¡Correcto! ${term}. Evidencia en página ${pairs.find(x=>x.term===term).page}.`;}
+  else{$('pdfMatchFeedback').textContent='No coincide. Intenta otra asociación.';b.classList.add('incorrect');setTimeout(()=>b.classList.remove('incorrect'),700);}
+  selected=null;document.querySelectorAll('#pdfTerms .pdf-choice').forEach(x=>x.classList.remove('selected'));updateScore();
+  if(matched.size===pairs.length)$('pdfMatchFeedback').textContent='¡Reto completado! Todas las asociaciones son correctas.';
+ }
+ function updateScore(){$('pdfGameScore').textContent='Puntaje: '+gameScore;}
+ function resetQuiz(){quizIndex=0;quizScore=0;quizLocked=false;renderQuiz();}
+ function renderQuiz(){
+  if(!quiz.length){$('pdfQuizQuestion').textContent='No hay suficiente texto para crear preguntas verificables.';return;}
+  const q=quiz[quizIndex];quizLocked=false;$('pdfQuizCount').textContent=`Pregunta ${quizIndex+1} de ${quiz.length}`;$('pdfQuizPoints').textContent='Puntos: '+quizScore;$('pdfQuizProgress').style.width=(quizIndex/quiz.length*100)+'%';$('pdfWheel').textContent=quizIndex+1;$('pdfQuizQuestion').textContent=q.q;$('pdfQuizAnswers').innerHTML='';
+  q.opts.forEach((opt,i)=>{const b=document.createElement('button');b.className='pdf-choice';b.textContent=opt.text;b.onclick=()=>answerQuiz(i,b);$('pdfQuizAnswers').append(b);});
+  $('pdfQuizFeedback').textContent='Selecciona una opción. La retroalimentación indicará la página.';$('pdfQuizNext').disabled=true;$('pdfQuizNext').textContent=quizIndex===quiz.length-1?'Ver resultado':'Siguiente pregunta';
+ }
+ function answerQuiz(i,btn){
+  if(quizLocked)return;quizLocked=true;const q=quiz[quizIndex];
+  [...$('pdfQuizAnswers').children].forEach((b,j)=>{b.disabled=true;if(j===q.correct)b.classList.add('correct');});
+  if(i===q.correct){quizScore+=10;gameScore+=10;$('pdfQuizFeedback').textContent='¡Correcto! Fragmento verificado en página '+q.page+'.';}
+  else{$('pdfQuizFeedback').textContent='Respuesta correcta resaltada. Consulta la página '+q.page+' del PDF.';btn.classList.add('incorrect');}
+  $('pdfQuizPoints').textContent='Puntos: '+quizScore;$('pdfQuizNext').disabled=false;updateScore();
+ }
+ $('pdfQuizNext').onclick=()=>{if(quizIndex<quiz.length-1){quizIndex++;renderQuiz();}else{$('pdfQuizQuestion').textContent='Resultado: '+quizScore+' de '+quiz.length*10+' puntos.';$('pdfQuizAnswers').innerHTML='';$('pdfQuizFeedback').textContent='Has completado las preguntas. Reinicia para volver a jugar.';$('pdfQuizNext').disabled=true;$('pdfQuizProgress').style.width='100%';}};
+ function drawRace(){
+  const coords=[];for(let c=0;c<6;c++)coords.push([5,c]);for(let r=4;r>=0;r--)coords.push([r,5]);for(let c=4;c>=0;c--)coords.push([0,c]);for(let r=1;r<=4;r++)coords.push([r,0]);
+  const board=$('pdfBoard');board.innerHTML='';
+  coords.forEach((_,i)=>{const t=document.createElement('div');t.className='pdf-tile'+(i===0?' start':'')+(i===19?' finish':'')+(i===racePos?' current':'');t.innerHTML=`<b>${i+1}</b><span>${i===0?'INICIO':i===19?'META':i===racePos?'🧑‍🚀':'CASILLA'}</span>`;board.append(t);});
+  $('pdfPosition').textContent=(racePos+1)+' / 20';$('pdfTurns').textContent=raceTurns;$('pdfRoll').disabled=!raceLocked||racePos>=19;
+ }
+ function resetRace(){racePos=0;raceTurns=0;raceLocked=true;raceQuestion=null;$('pdfDice').textContent='⚄';$('pdfRaceQuestionTitle').textContent='Listo para comenzar';$('pdfRaceQuestion').textContent='Lanza el dado para recibir una pregunta del PDF.';$('pdfRaceAnswers').innerHTML='';$('pdfRaceFeedback').textContent='¡Llega a la meta!';$('pdfRoll').textContent='Lanzar dado y responder';drawRace();}
+ function rollRace(){
+  if(!raceLocked||racePos>=19||!quiz.length)return;raceLocked=false;const die=1+Math.floor(Math.random()*6);$('pdfDice').textContent=['⚀','⚁','⚂','⚃','⚄','⚅'][die-1]+' '+die;
+  raceQuestion=quiz[Math.floor(Math.random()*quiz.length)];$('pdfRaceQuestionTitle').textContent='Pregunta del turno';$('pdfRaceQuestion').textContent=raceQuestion.q;$('pdfRaceAnswers').innerHTML='';
+  raceQuestion.opts.forEach((opt,i)=>{const b=document.createElement('button');b.className='pdf-choice';b.textContent=opt.text;b.onclick=()=>resolveRace(i,b,die);$('pdfRaceAnswers').append(b);});
+  $('pdfRaceFeedback').textContent='Responde para mover tu ficha.';
+ }
+ function resolveRace(i,btn,die){
+  if(raceLocked)return;raceLocked=true;raceTurns++;const correct=i===raceQuestion.correct;
+  [...$('pdfRaceAnswers').children].forEach((b,j)=>{b.disabled=true;if(j===raceQuestion.correct)b.classList.add('correct');});
+  if(correct){racePos=Math.min(19,racePos+die);gameScore+=10;$('pdfRaceFeedback').textContent='¡Correcto! Avanzas '+die+' casillas. Referencia: página '+raceQuestion.page+'.';}
+  else{racePos=Math.max(0,racePos-2);$('pdfRaceFeedback').textContent='Respuesta incorrecta: retrocedes 2 casillas. La opción correcta está resaltada; referencia: página '+raceQuestion.page+'.';btn.classList.add('incorrect');}
+  updateScore();drawRace();if(racePos===19)$('pdfRaceFeedback').textContent+=' ¡Llegaste a la meta!';$('pdfRoll').textContent=racePos===19?'Carrera terminada':'Lanzar siguiente turno';
+ }
+ $('pdfRoll').onclick=rollRace;
+ $('pdfMatchReset').onclick=()=>{gameScore=0;renderMatch();updateScore();};
+ $('pdfQuizReset').onclick=()=>{gameScore=0;resetQuiz();updateScore();};
+ $('pdfRaceReset').onclick=()=>{gameScore=0;resetRace();updateScore();};
+ document.querySelectorAll('#pdfPanel .pdf-game-tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#pdfPanel .pdf-game-tabs button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('#pdfPanel .pdf-game').forEach(x=>x.classList.toggle('active',x.id===b.dataset.pdfgame));});
+ async function loadPDF(file){
+  if(!file)return;
+  if(!/\.pdf$/i.test(file.name)){status('Formato no admitido. Selecciona un archivo PDF.','bad');return;}
+  if(!window.pdfjsLib){status('No se pudo cargar el lector PDF.js. Comprueba tu conexión a Internet.','bad');return;}
+  $('pdfReport').hidden=true;pages=[];status('Leyendo el PDF localmente…');
+  try{
+   pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+   const bytes=await file.arrayBuffer(),doc=await pdfjsLib.getDocument({data:bytes}).promise;
+   for(let n=1;n<=doc.numPages;n++){
+    const page=await doc.getPage(n),content=await page.getTextContent();
+    const text=content.items.map(x=>x.str).join(' ');
+    pages.push(clean(text));
+   }
+   $('pdfFileMeta').textContent=`${file.name} · ${doc.numPages} páginas · ${(file.size/1024/1024).toFixed(2)} MB`;
+   const extracted=pages.join('').trim();
+   if(extracted.length<80){status('El PDF parece escaneado o no contiene texto seleccionable. No se generó un informe para evitar inventar información. Se requiere OCR.','warn');return;}
+   renderReport(file.name);status('PDF procesado. Informe, matriz y actividades generados desde el texto extraído.','good');
+  }catch(err){console.error(err);status('No fue posible leer el PDF. Puede estar protegido, dañado o usar una estructura no compatible.','bad');}
+ }
+ $('pdfChoose').onclick=()=>$('pdfFile').click();
+ $('pdfFile').addEventListener('change',e=>loadPDF(e.target.files[0]));
+ $('pdfReset').onclick=()=>{$('pdfFile').value='';pages=[];facts=[];$('pdfReport').hidden=true;$('pdfFileMeta').textContent='No hay documento cargado.';status('Análisis limpiado. Esperando un PDF.');};
+ const drop=$('pdfDrop');
+ drop.addEventListener('dragover',e=>{e.preventDefault();drop.classList.add('drag');});
+ drop.addEventListener('dragleave',()=>drop.classList.remove('drag'));
+ drop.addEventListener('drop',e=>{e.preventDefault();drop.classList.remove('drag');loadPDF(e.dataTransfer.files[0]);});
+})();
+</script>
+
+
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script>
+(function(){
+ const $=id=>document.getElementById(id); const clean=s=>String(s||'').trim();
+ let provider='meet';
+ const links={meet:'https://meet.google.com/new',teams:'https://teams.microsoft.com/v2/?meetingType=meetNow'};
+ function setProvider(p){provider=p; $('chooseMeet').classList.toggle('active',p==='meet');$('chooseTeams').classList.toggle('active',p==='teams');$('providerHelp').textContent=p==='meet'?'Se abrirá Google Meet para crear una reunión. Cuando genere el enlace, cópialo y pégalo en el campo de abajo.':'Se abrirá Microsoft Teams para iniciar o programar una reunión. Copia el enlace de la reunión y pégalo en el campo de abajo.';$('createProviderMeeting').textContent='Crear reunión en '+(p==='meet'?'Google Meet':'Microsoft Teams');$('teamsOpen').textContent='Abrir '+(p==='meet'?'Google Meet':'Microsoft Teams');$('teamsMeetingUrl').placeholder=p==='meet'?'https://meet.google.com/abc-defg-hij':'https://teams.microsoft.com/l/meetup-join/...';}
+ function validMeeting(){try{const u=new URL(clean($('teamsMeetingUrl').value));if(u.protocol!=='https:')return null;const h=u.hostname.toLowerCase();return (h==='meet.google.com'||h.endsWith('.teams.microsoft.com')||h==='teams.microsoft.com')?u:null;}catch(e){return null;}}
+ function inviteText(){const name=clean($('teamsMeetingName').value)||'Reunión de trabajo';const url=clean($('teamsMeetingUrl').value);return `${name}
+Plataforma: ${provider==='meet'?'Google Meet':'Microsoft Teams'}
+Enlace: ${url}
+Participante: ${clean($('teamsParticipant').value)||'Por confirmar'}
+Correo: ${clean($('teamsEmail').value)||'No indicado'}
+Mensaje: ${clean($('teamsReason').value)||'Te invito a participar en esta reunión.'}`;}
+ $('chooseMeet').onclick=()=>setProvider('meet');$('chooseTeams').onclick=()=>setProvider('teams');
+ $('createProviderMeeting').onclick=()=>{window.open(links[provider],'_blank','noopener,noreferrer');$('teamsStatus').textContent='Se abrió '+(provider==='meet'?'Google Meet':'Microsoft Teams')+'. Crea la reunión, copia el enlace que te proporcione la plataforma y pégalo aquí.';};
+ $('teamsJoin').onclick=()=>{const u=validMeeting();if(!u){$('teamsStatus').textContent='Pega un enlace HTTPS válido de meet.google.com o teams.microsoft.com.';return;}window.open(u.href,'_blank','noopener,noreferrer');$('teamsStatus').textContent='Se abrió la sala. Activa cámara y micrófono dentro de Meet o Teams y solicita ingreso si la plataforma lo requiere.';};
+ $('teamsCopy').onclick=async()=>{if(!validMeeting()){$('teamsStatus').textContent='Primero pega un enlace válido de Meet o Teams.';return;}try{await navigator.clipboard.writeText(inviteText());$('teamsStatus').textContent='Invitación copiada. Ya puedes compartirla con los participantes.';}catch(e){$('teamsStatus').textContent='No fue posible copiar automáticamente. Selecciona y copia los datos manualmente.';}};
+ $('teamsOpen').onclick=()=>window.open(links[provider],'_blank','noopener,noreferrer');setProvider('meet');
+})();
+</script>
+
+
+<script>
+(function(){
+ const $=id=>document.getElementById(id);
+ let stream=null,audioContext=null,analyser=null,meterFrame=null;
+ function deviceStatus(msg){$('teamsDeviceState').textContent=msg;}
+ function stopMeter(){
+  if(meterFrame)cancelAnimationFrame(meterFrame);
+  meterFrame=null;$('teamsMicMeter').style.width='0%';
+  if(audioContext){audioContext.close().catch(()=>{});audioContext=null;}
+ }
+ function stopDevices(){
+  stopMeter();
+  if(stream){stream.getTracks().forEach(t=>t.stop());stream=null;}
+  $('teamsLocalVideo').srcObject=null;
+  ['teamsToggleMic','teamsToggleCamera','teamsStopDevices'].forEach(id=>$(id).disabled=true);
+  $('teamsStartDevices').disabled=false;
+  $('teamsToggleMic').textContent='Silenciar micrófono';
+  $('teamsToggleCamera').textContent='Apagar cámara';
+  deviceStatus('Cámara y micrófono apagados.');
+ }
+ async function startDevices(){
+  if(!navigator.mediaDevices?.getUserMedia){
+   deviceStatus('Este navegador o contexto no permite acceder a cámara y micrófono. Abre el HTML mediante HTTPS o localhost y usa un navegador compatible.');
+   return;
+  }
+  try{
+   stream=await navigator.mediaDevices.getUserMedia({video:true,audio:true});
+   $('teamsLocalVideo').srcObject=stream;
+   $('teamsStartDevices').disabled=true;
+   ['teamsToggleMic','teamsToggleCamera','teamsStopDevices'].forEach(id=>$(id).disabled=false);
+   deviceStatus('Dispositivos activos. La vista previa es local; para transmitir a otras personas debes entrar a la reunión de Teams.');
+   const audioTrack=stream.getAudioTracks()[0];
+   if(audioTrack&&window.AudioContext){
+    audioContext=new AudioContext();
+    const source=audioContext.createMediaStreamSource(stream);
+    analyser=audioContext.createAnalyser();analyser.fftSize=256;source.connect(analyser);
+    const data=new Uint8Array(analyser.frequencyBinCount);
+    const draw=()=>{if(!analyser)return;analyser.getByteFrequencyData(data);const avg=data.reduce((a,b)=>a+b,0)/data.length;$('teamsMicMeter').style.width=Math.min(100,avg*1.8)+'%';meterFrame=requestAnimationFrame(draw);};
+    draw();
+   }
+  }catch(err){
+   let msg='No se pudo activar la cámara o el micrófono.';
+   if(err.name==='NotAllowedError')msg='Permiso denegado. Autoriza cámara y micrófono en el navegador.';
+   if(err.name==='NotFoundError')msg='No se encontró una cámara o un micrófono disponible.';
+   if(err.name==='NotReadableError')msg='El dispositivo está ocupado por otra aplicación. Cierra otras aplicaciones que lo estén usando.';
+   deviceStatus(msg);stopDevices();
+  }
+ }
+ $('teamsStartDevices').addEventListener('click',startDevices);
+ $('teamsToggleMic').addEventListener('click',()=>{
+  if(!stream)return;const track=stream.getAudioTracks()[0];if(!track)return;
+  track.enabled=!track.enabled;$('teamsToggleMic').textContent=track.enabled?'Silenciar micrófono':'Activar micrófono';
+  deviceStatus(track.enabled?'Micrófono activo.':'Micrófono silenciado.');
+ });
+ $('teamsToggleCamera').addEventListener('click',()=>{
+  if(!stream)return;const track=stream.getVideoTracks()[0];if(!track)return;
+  track.enabled=!track.enabled;$('teamsToggleCamera').textContent=track.enabled?'Apagar cámara':'Activar cámara';
+  deviceStatus(track.enabled?'Cámara activa.':'Cámara apagada.');
+ });
+ $('teamsStopDevices').addEventListener('click',stopDevices);
+ window.addEventListener('pagehide',stopDevices);
+})();
+</script>
+
+
+<script>
+(function(){
+ const $=id=>document.getElementById(id);let peer=null,call=null,local=null,remote=null;
+ const status=t=>{$('p2pStatus').textContent=t;};
+ const room=()=>String($('p2pRoomCode').value||'').trim();
+ function stopCall(){if(call){try{call.close();}catch(e){}call=null;}if(peer){try{peer.destroy();}catch(e){}peer=null;}if(local){local.getTracks().forEach(t=>t.stop());local=null;}remote=null;$('p2pLocal').srcObject=null;$('p2pRemote').srcObject=null;$('p2pCreate').disabled=false;$('p2pJoin').disabled=false;$('p2pCopy').disabled=true;$('p2pHangup').disabled=true;}
+ async function media(){if(!navigator.mediaDevices?.getUserMedia)throw new Error('Abre esta página desde HTTPS o localhost para habilitar cámara y micrófono.');return await navigator.mediaDevices.getUserMedia({video:true,audio:true});}
+ function peerOptions(){return {host:'0.peerjs.com',port:443,path:'/',secure:true,debug:1};}
+ function attachCall(c){call=c;c.on('stream',s=>{$('p2pRemote').srcObject=s;status('Videollamada conectada. Ya pueden verse y escucharse en tiempo real.');});c.on('close',()=>{status('El otro participante salió de la llamada.');$('p2pRemote').srcObject=null;});c.on('error',e=>status('Error en la llamada: '+e.message));$('p2pHangup').disabled=false;}
+ $('p2pCreate').onclick=async()=>{stopCall();if(!window.Peer){status('No se pudo cargar PeerJS. Comprueba tu conexión a Internet.');return;}try{local=await media();$('p2pLocal').srcObject=local;peer=new Peer(undefined,peerOptions());$('p2pCreate').disabled=true;$('p2pJoin').disabled=true;peer.on('open',id=>{$('p2pRoomCode').value=id;$('p2pCopy').disabled=false;status('Sala creada. Comparte este código con una persona y espera su conexión.');});peer.on('call',incoming=>{incoming.answer(local);attachCall(incoming);status('Participante conectado. Estableciendo audio y video…');});peer.on('error',e=>status('No se pudo establecer la sala: '+e.message));}catch(e){stopCall();status(e.message||'No se pudo iniciar cámara y micrófono.');}};
+ $('p2pJoin').onclick=async()=>{stopCall();const id=room();if(!id){status('Introduce el código de sala que te compartió el organizador.');return;}if(!window.Peer){status('No se pudo cargar PeerJS. Comprueba tu conexión a Internet.');return;}try{local=await media();$('p2pLocal').srcObject=local;peer=new Peer(undefined,peerOptions());$('p2pCreate').disabled=true;$('p2pJoin').disabled=true;peer.on('open',()=>{const c=peer.call(id,local,{metadata:{name:$('p2pDisplayName').value||'Participante'}});if(!c){status('No se pudo llamar a esa sala. Verifica el código.');return;}attachCall(c);status('Llamando a la sala… espera a que el organizador acepte la conexión.');});peer.on('error',e=>status('No se pudo conectar: '+e.message+'. Verifica el código y que la otra persona tenga la sala abierta.'));}catch(e){stopCall();status(e.message||'No se pudo iniciar cámara y micrófono.');}};
+ $('p2pCopy').onclick=async()=>{try{await navigator.clipboard.writeText(room());status('Código copiado. Envíalo al otro participante.');}catch(e){status('Selecciona el código y cópialo manualmente.');}};
+ $('p2pHangup').onclick=()=>{stopCall();status('Llamada finalizada y dispositivos liberados.');};window.addEventListener('pagehide',stopCall);
+ const params=new URLSearchParams(location.search);if(params.get('room'))$('p2pRoomCode').value=params.get('room');
+})();
+</script>
+
+</body></html>
